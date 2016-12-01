@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Microsoft Yahei";
+}
+
+body {
+  background-image: url(../img/bg2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+::-moz-selection {
+  background-color: transparent;
+}
+
+::selection {
+  background-color: transparent;
+}
+
+#wrapper {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+#wrapper h1 {
+  font-size: 4em;
+  color: white;
+  text-shadow: 1px 1px 5px black;
+}
+#wrapper h2 {
+  width: 100%;
+  font-size: 12em;
+  margin: 5px 0;
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+}
+#wrapper #start,
+#wrapper #reset {
+  width: 100%;
+  height: 100px;
+  font-size: 2em;
+  margin: 2px 0;
+  background-color: transparent;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition: all .3s;
+          transition: all .3s;
+}
+#wrapper #start:hover,
+#wrapper #reset:hover {
+  background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.1));
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.1));
+}
+#wrapper #start:active,
+#wrapper #reset:active {
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.1));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.1));
+}
+#wrapper #reinput,
+#wrapper #resetcircle {
+  position: fixed;
+  bottom: 40px;
+  width: 30%;
+  height: 5%;
+  font-size: 1.5em;
+  cursor: pointer;
+  outline: none;
+  opacity: .5;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  -webkit-transition: all .3s;
+          transition: all .3s;
+}
+#wrapper #reinput:hover,
+#wrapper #resetcircle:hover {
+  opacity: 1;
+}
+#wrapper #reinput {
+  left: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+#wrapper #resetcircle {
+  right: 0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+#wrapper audio {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+#wrapper .ani {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  border-radius: 100%;
+  position: relative;
+  border: 5px solid lightblue;
+}
+#wrapper .ani:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -75px;
+  margin-left: -75px;
+  border-radius: 100%;
+  border: 75px solid transparent;
+  border-top-color: orange;
+}
+
+.rotateani {
+  -webkit-animation: xuanzhuan 1s linear infinite;
+          animation: xuanzhuan 1s linear infinite;
+}
+@-webkit-keyframes xuanzhuan {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes xuanzhuan {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.bigsmall {
+  -webkit-animation: bigsmall 1s infinite ease-out;
+          animation: bigsmall 1s infinite ease-out;
+}
+@-webkit-keyframes bigsmall {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(1.8);
+            transform: scale(1.8);
+    opacity: 0.5;
+  }
+}
+@keyframes bigsmall {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(1.8);
+            transform: scale(1.8);
+    opacity: 0.5;
+  }
+}
+.count {
+  background-color: transparent;
+  border: none;
+  margin-top: 10px;
+}
+.count .yuan {
+  position: inherit;
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin: 5px;
+  border-radius: 100%;
+  border: 2px solid white;
+}
+.count .addbg {
+  -webkit-animation: yuan 1s linear;
+          animation: yuan 1s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@-webkit-keyframes yuan {
+  from {
+    background-color: transparent;
+  }
+  to {
+    background-color: white;
+  }
+}
+@keyframes yuan {
+  from {
+    background-color: transparent;
+  }
+  to {
+    background-color: white;
+  }
+}
+.count .removebg {
+  -webkit-animation: yuan2 1s linear;
+          animation: yuan2 1s linear;
+}
+@-webkit-keyframes yuan2 {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: transparent;
+  }
+}
+@keyframes yuan2 {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: transparent;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
