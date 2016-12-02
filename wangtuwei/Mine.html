@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=640px,maximum-scale=1.0, user-scalable=no,target-densitydpi=320" />
+
+<meta charset="utf-8" />
+
+<head>
+    <title>我的信息</title>
+    <link type="text/css" rel="stylesheet" href="Images/WechatStuff/style.css" />
+</head>
+
+<body>
+
+    <div class="warp">
+        <div class="header">
+            <div class="search">
+                <form action="WeChatSearch.aspx" method="GET">
+                    <input type="hidden" name="Job" value="<%=GetJobName()%>">
+                    <input type="text" id="keyword" name="query" placeholder="我的图书馆" class="input" onkeypress="submitForm()" />
+                </form>
+            </div>
+        </div>
+
+
+        <!--<div class="pic">
+            <h1></h1></div>-->
+        <div style="margin-top:95px">
+        </div>
+
+        <div class="content">
+            <div class="top">
+                <div class="touxiang" style="background:url('../Images/WechatStuff/touxiang.jpg') center no-repeat;background-size: 200px;"></div>
+                <h2>姓 名</h2>
+
+            </div>
+
+            <div class="personal">
+                <ul class="listone">
+                    <li>
+                        <div class="left">登录名</div>
+                        <div class="right">S150101</div>
+                    </li>
+                    <li>
+                        <div class="left">状态</div>
+                        <div class="right">正常状态</div>
+                    </li>
+                </ul>
+
+                <ul class="listtwo">
+                    <li>
+                        <div class="left">已借/可借</div>
+                        <div class="right">8/10</div>
+                    </li>
+
+                    <li>
+                        <div class="left">总借书数</div>
+                        <div class="right">9999</div>
+                    </li>
+                </ul>
+
+                <ul class="listthree">
+                    <li>
+                        <div class="left">阅读评测排名</div>
+                        <div class="right">999</div>
+                    </li>
+                    <li>
+                        <div class="left">通过测评(册)</div>
+                        <div class="right">10</div>
+                    </li>
+                    <li>
+                        <div class="left">阅读字数(万)</div>
+                        <div class="right">999999</div>
+                    </li>
+                </ul>
+                <ul class="listfour">
+                    <li>
+                        <div class="left">押金金额</div>
+                        <div class="right">0.00</div>
+                    </li>
+                    <li>
+                        <div class="left">欠款</div>
+                        <div class="right">0.00</div>
+                    </li>
+                    <li>
+                        <div class="left">欠罚款</div>
+                        <div class="right">0.00</div>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <style type="text/css">
+            .list-4 {
+                background: url('Images/WechatStuff/bottom-4-2.png') 50% 5px no-repeat;
+            }
+
+        </style>
+
+
+        <div class="footer">
+            <ul class="list">
+                <li class="list-1"><a href="WechatHome.aspx"><span>首页</span></a></li>
+                <li class="list-2"><a href="WechatHome.aspx"><span>发现</span></a></li>
+                <li class="list-3"><a href="WechatHome.aspx"><span>活动</span></a></li>
+                <li class="list-4"><a href="Mine.html"><span style="color:#a30000;">我的</span></a></li>
+            </ul>
+        </div>
+
+
+    </div>
+
+
+
+</body>
+
+
+
+</html>

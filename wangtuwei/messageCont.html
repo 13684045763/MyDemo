@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=640px,maximum-scale=1.0, user-scalable=no,target-densitydpi=320" />
+
+<meta charset="utf-8" />
+
+<head>
+    <title>消息</title>
+    <link type="text/css" rel="stylesheet" href="Images/WechatStuff/style.css" />
+</head>
+
+<body>
+
+    <div class="warp">
+        <div class="header">
+            <div class="search">
+                <form action="WeChatSearch.aspx" method="GET">
+                    <input type="hidden" name="Job" value="<%=GetJobName()%>">
+                    <input type="text" id="keyword" name="query" placeholder="我的图书馆" class="input" onkeypress="submitForm()" />
+                </form>
+            </div>
+        </div>
+
+
+        <div class="pic">
+            <h1></h1></div>
+        <!--<div style="margin-top:95px">
+        </div>-->
+
+        <div class="content">
+            <div class="msg">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <p>关注微信网图，密码再也不丢失关注微信网图，密码再也不丢失关注微信网图，密码再也不丢失关注微信网图，密码再也不丢失</p>
+                            <p>来源：</p>
+                            <p>四川省成都市中小学教育平台四川省成都市中小学教育平台</p>
+                            <p>时间：2015-01-01</p>
+                        </a>
+                    </li>
+                </ul>
+                <div class="con">
+                    <p style="LINE-HEIGHT: 2em">
+    <span style="FONT-FAMILY: 微软雅黑,Microsoft YaHei; FONT-SIZE: 24px">　　也许您为借还图书流程繁琐而烦恼，也许您为忘带借阅证而与心爱的图书失之交臂而烦恼，也许您没有在图书馆开放的时间及时借阅到您的爱书而烦恼……<br/>　　与时俱进，我们一直在努力。为了您能方便快捷的与您心爱的图书亲密接触，我公司现推出智慧图书馆解决您的烦恼，该自助借还机可利用本公司新开发的芬格指纹借阅系统、RFID、以及身份证等进行识别操作借还，操作手续简便，读者只需要按照设备屏幕显示操作步骤进行操作，几秒钟便可完成借还书的整个过程。<br/></span>
+</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <style type="text/css">
+            .list-2 {
+                background: url('Images/WechatStuff/bottom-2-2.png') 50% 5px no-repeat;
+            }
+        </style>
+
+
+        <div class="footer">
+            <ul class="list">
+                <li class="list-1"><a href="WechatHome.aspx"><span>首页</span></a></li>
+                <li class="list-2"><a href="WechatMessage.aspx"><span style="color:#a30000;">消息</span></a></li>
+                <li class="list-3"><a href="WechatHome.aspx"><span>活动</span></a></li>
+                <li class="list-4"><a href="WechatUserProfile.aspx"><span>我的</span></a></li>
+            </ul>
+        </div>
+
+
+    </div>
+
+
+
+</body>
+
+
+
+</html>

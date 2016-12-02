@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=640px,maximum-scale=1.0, user-scalable=no,target-densitydpi=320" />
+
+<meta charset="utf-8" />
+
+<head>
+    <title>读者绑定</title>
+    <link type="text/css" rel="stylesheet" href="Images/WechatStuff/style.css" />
+    <link type="text/css" rel="stylesheet" href="Images/WechatStuff/login.css" />
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js"></script>
+    <style type="text/css">
+        span {
+            display: inline-block;
+            text-align: left;
+        }
+        
+        h2:nth-of-type(2) span {
+            color: #800;
+        }
+        
+        h3 {
+            font-size: 1.8em;
+            margin: 0 30px;
+            margin-top: -60px;
+        }
+        
+        h2 {
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="warp">
+        <div class="header">
+            <div class="search">
+                <form action="" method="post" id="form1">
+                    <input type="hidden" name="" value="" />
+                    <input type="text" id="keyword" name="keyword" placeholder="我的图书馆" class="input" onkeypress="submitForm()" />
+                </form>
+            </div>
+        </div>
+
+
+        <div><img src="Images/WechatStuff/MyCsln.jpg" style="height: 320px; margin-top: 95px;" />
+            <h1></h1></div>
+
+
+        <div class="main_content">
+
+            <div class="pass">
+                <h2>您已成功绑定:<span>网图演示图网图演示图网图演示图网图演示图网图演示图书馆(aaa)</span></h2>
+                <h2>欢迎您：<span>某某某</span></h2>
+                <h2>请返回进行其他操作</h2>
+                <div class="tijiao"><button onclick="WeixinJSBridge.call('closeWindow');">返&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;回</button></div>
+            </div>
+
+            <h3>若要重新绑定，请取消关注后，重新关注CSLNNET并绑定</h3>
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+</body>
+
+
+
+</html>
