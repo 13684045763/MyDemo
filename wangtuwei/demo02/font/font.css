@@ -1,0 +1,37 @@
+/* 字体 */
+
+@font-face {
+    font-family: font01;
+    src: url('01.ttf')
+}
+
+@font-face {
+    font-family: font02;
+    src: url('02.ttf')
+}
+
+@font-face {
+    font-family: font03;
+    src: url('03.ttf')
+}
+
+@font-face {
+    font-family: font04;
+    src: url('04.ttf')
+}
+@font-face {
+    font-family: font05;
+    src: url('05.ttf')
+}
+@font-face {
+    font-family: font06;
+    src: url('06.ttf')
+}
+@font-face {
+    font-family: font07;
+    src: url('07.ttf')
+}
+@font-face {
+    font-family: font08;
+    src: url('08.ttf')
+}

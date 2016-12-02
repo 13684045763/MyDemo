@@ -1,0 +1,437 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft Yahei";
+}
+
+
+
+
+
+/* 背景颜色 */
+
+.s01 {
+    background: white;
+}
+
+.s02 {
+    background: #FFCCCC;
+}
+
+.s03 {
+    background: #FF6666;
+}
+
+
+
+/* 页脚动画层 */
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 640px;
+    opacity: 0.6;
+}
+
+.footer .tiao1 {
+    width: 50px;
+    height: 10px;
+    background: white;
+    transform: rotate(-30deg);
+    display: inline-block;
+    margin-right: -16px;
+    box-shadow: 1px 1px 5px gray;
+}
+
+.footer .tiao2 {
+    width: 50px;
+    height: 10px;
+    background: white;
+    transform: rotate(30deg);
+    display: inline-block;
+    box-shadow: 1px 1px 5px gray;
+}
+
+.warp2 {
+    width: 90px;
+    margin: 0 auto;
+    animation: updown 1.5s infinite ease-in-out;
+}
+
+@keyframes updown {
+    0% {
+        margin-top: 30px;
+    }
+    50% {
+        margin-top: 0px;
+    }
+    100% {
+        margin-top: 30px;
+    }
+}
+
+
+/*悬挂*/
+
+.xuangua {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: -60px;
+    right: 2px;
+    background: url("../img/ding.png") 0 0 no-repeat;
+    z-index: 999;
+    animation: xuangua 10s infinite linear;
+}
+
+@keyframes xuangua {
+    0% {
+        top: -60px;
+    }
+    50% {
+        top: -50px;
+    }
+    100% {
+        top: -60px;
+    }
+}
+
+
+/* 包裹层 */
+
+.warp {
+    width: 640px;
+    margin: 0 auto;
+    border: 1px solid transparent;
+    height: 100%;
+    position: relative;
+}
+
+.s01 .content {
+    margin-top: 100px;
+}
+
+.s01 h1 {
+    font-family: font02;
+    font-size: 72px;
+    color: black;
+    font-weight: normal;
+    text-align: center;
+
+}
+
+.s01 h2 {
+    font-family: font01;
+    color: white;
+    text-shadow: 0 0 5px black;
+    text-align: right;
+    margin-top: 40px;
+    margin-right: 40px;
+    font-size: 32px;
+    font-weight: normal;
+    border-right: 4px dotted black;
+    padding-right: 15px;
+    animation: animation01 5s infinite ease-in-out;
+}
+
+@keyframes animation01 {
+    0% {
+        padding-right: 15px;
+    }
+    50% {
+        padding-right: 40px;
+    }
+    100% {
+        padding-right: 15px;
+    }
+}
+
+.s01 .pic01 {
+    background: url("../img/s01bg.jpg") 50% 50% no-repeat;
+    background-size: 100%;
+    width: 640px;
+    height: 500px;
+    margin: 50px auto 0 auto;
+}
+
+
+/* 第二屏 */
+
+.s02 .user {
+    height: 340px;
+    overflow: hidden;
+    border-bottom: 10px dotted #FF6666;
+    background: #FF9966;
+}
+
+.s02 .touxiang {
+    width: 240px;
+    height: 240px;
+    background: url("../img/weixin.png") 50% 50% no-repeat;
+    background-size: 100%;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 240px;
+    float: left;
+    margin: 50px;
+}
+
+.s02 .name {
+    float: left;
+    、、line-height: 240px;
+    font-size: 34px;
+    font-weight: bold;
+    margin-top: 50px;
+    width：300px;
+}
+
+.s02 .name p{
+    width:280px;
+    margin-top: 70px;
+    
+    
+}
+
+.s02 .data {
+    margin-top: 250px;
+}
+
+.s02 .data img {
+    width: 100px;
+    opacity: 0.6;
+}
+
+.s02 .data {
+    font-size: 40px;
+    height: 100px;
+    line-height: 50px;
+    margin-left: 50px;
+}
+
+.s02 .bg{
+    width:100%;
+    height:300px;
+    position: absolute;
+    bottom: 0px;
+    background:url("../img/s02gb.png") 0 100% no-repeat;
+    background-size: 100%;
+}
+
+
+
+
+.s03 h1 {
+    margin-top: 20px;
+    //border-bottom: 5px dashed white;
+}
+
+.s03 #main {
+    width: 640px;
+    height: 400px;
+    margin-top: 40px;
+    padding: 20px 0;
+    border-bottom: 5px dashed white;
+    border-top: 5px dashed white;
+    display: none;
+}
+
+.s03 .p {
+    margin-top: 60px;
+    position: absolute;
+    bottom:150px;
+    z-index: 99;
+}
+
+.s03 .p p {
+    font-family: font05;
+    font-size: 65px;
+    color: #ffecec;
+    margin-left: 150px;
+    //text-shadow: 1px 1px 5px gray;
+    position: relative;
+    right: -120px;
+}
+
+.s03 .bg{
+    width:100%;
+    height:300px;
+    position: absolute;
+    bottom: 0px;
+    background:url("../img/s03bg.png") 0 70% no-repeat;
+    background-size: 100%;
+    display: none;
+}
+
+
+/*-----------------------------S04----*/
+.s04{
+    background:#FFCC99;
+}
+.s04 h1{
+    margin-top: 20px;
+}
+
+.s04 #main2 {
+    width: 640px;
+    height: 400px;
+    margin-top: 40px;
+    padding: 20px 0;
+    border-bottom: 5px dashed white;
+    border-top: 5px dashed white;
+    display: none;
+}
+
+.s04 .content .foot01{
+    background:url("../img/foot01.png") 50% 50% no-repeat;
+    background-size: 90%;
+    width:150px;
+    height: 200px;
+    position: absolute;
+    bottom:20px;
+    left: 20px;
+    opacity: 0.6;
+    display: none;
+}
+
+.s04 .content .foot02{
+    background:url("../img/foot02.png") 50% 50% no-repeat;
+    background-size: 70%;
+    width:150px;
+    height: 200px;
+    position: absolute;
+    bottom:170px;
+    left: 110px;
+    opacity: 0.5;
+    display: none;
+}
+
+.s04 .content p{
+    font-family: font03;
+    font-size: 45px;
+    transform: rotate(-25deg);
+    position: absolute;
+    right:-200px;
+    bottom:-100px;
+    opacity: 0;
+}
+
+.s04 .bg{
+    width:100%;
+    height:300px;
+    position: absolute;
+    bottom: 0px;
+    background:url("../img/s04bg.png") 0 -50% no-repeat;
+    background-size: 100%;
+    //display: none;
+}
+
+
+
+/*-------------------s05------------------------*/
+
+.s05{
+    background:#CCCCFF;
+}
+
+.s05 h1{
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.s05 .five div{
+    font-size: 40px;
+    padding-left: 20px;
+    font-family: font06;
+}
+
+.s05 .five p{
+    font-size: 16px!important;
+    border-bottom:3px dashed white;
+    padding-bottom: 10px;
+    padding-right:40px;
+    text-align: right;
+}
+
+.s05 .five p span{
+    font-weight: bold;
+}
+
+.s05 .left{
+    font-size: 40px;
+    font-family: font06;
+    position: absolute;
+    bottom: 200px;
+    left: -200px;
+    z-index: 9;
+}
+
+.s05 .right{
+    font-size: 32px;
+    font-family: font06;
+    position: absolute;
+    bottom: 120px;
+    right:-600px;
+    z-index: 9;
+}
+
+.s05 .bg{
+    width:100%;
+    height:300px;
+    position: absolute;
+    bottom: 0px;
+    background:url("../img/s05bg.png") 0 50% no-repeat;
+    background-size: 100%;
+    display: none;
+}
+
+
+/*---------------------last--------------------*/
+
+.last .content .p1{
+    font-size: 50px;
+    font-family: font06;
+    padding-left: 50px;
+    display: none;
+}
+
+.last .content .p2{
+    font-size: 60px;
+    font-family: font06;
+    text-align: right;
+    padding-right: 50px;
+    display: none;
+}
+
+.last .zeng{
+    height:230px;
+    margin-top: 40px;
+}
+
+.last .content .p3{
+    text-align: center;
+    font-family: font01;
+    font-size: 32px;
+    margin-top: 30px;
+    display: none;
+}
+
+.last .erweima{
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 40px;
+    border-top: 5px dashed gray;
+}
+.last .erweima img{
+    width:300px
+}
+.last .erweima .p4{
+    font-size: 30px;
+    font-family: font07;
+    margin-top: 30px;
+}
+.last .erweima .p5{
+    font-size: 40px;
+    font-family: font07;
+    margin-top: 40px;
+}
