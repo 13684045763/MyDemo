@@ -4,12 +4,16 @@ $(function () {
     var n = parseInt(maxtime); //转换为int格式
     var circle = prompt("请输入周期次数（请输入纯数字）：");
     var m = parseInt(circle, 10);
+    var groupCounts = 0; //声明组数变量
+    var group = $('#wrapper .finished span'); //组数所在对象
     var t; //创建对象，用来被定时器赋值
     var ani = $('#wrapper .ani');
     var audioEle = document.getElementById('audio'); //创建wav播放对象[0]是jq必带参数，不然后面无法运行
     var time = $('#wrapper h2');
 
     time.text(n); //页面显示定义的最大时间
+
+
     /*插入周期次数小圆点*/
     for (i = 0; i < m; i++) {
         $('<div class="yuan"></div>').appendTo('#wrapper .count');
@@ -35,7 +39,13 @@ $(function () {
 
     /*重置小圆点*/
     $('#wrapper #resetcircle').click(function () {
-        $('#wrapper .count .yuan').removeClass('addbg');
+        $('#wrapper .count .yuan').removeClass('addbg1 addbg2');
+    });
+
+    /*重置组数*/
+    $('#wrapper #resetgroup').click(function () {
+        groupCounts = 0;
+        group.text(groupCounts);
     });
 
     /*空格键事件*/
@@ -84,13 +94,34 @@ $(function () {
             /*计时结束给周期次数增加样式:小圆点*/
             $('.count .yuan').each(function (index) {
                 if ($(this).attr('class').indexOf('addbg') < 0) {
-                    $(this).addClass('addbg');
+                    if (index % 2 != 0) {
+                        //奇数
+                        $(this).addClass('addbg1');
+                    } else {
+                        //偶数
+                        $(this).addClass('addbg2');
+                    }
+
+
                     if (index + 1 < $('.count .yuan').length) {
                         return false;
                     } else {
                         var t3 = setTimeout(function () {
-                            $('.count .yuan').removeClass('addbg');
+                            $('.count .yuan').removeClass('addbg1 addbg2');
                         }, 2000);
+
+                        //完成一轮，组数加1
+                        group.animate({
+                            'opacity': 0
+                        }, 100).animate({
+                            'opacity': 1
+                        }, 100);
+                        $('#wrapper .finished').animate({
+                            'bottom': '80'
+                        }, 100).animate({
+                            'bottom': '100'
+                        }, 100);
+                        group.text(++groupCounts);
 
                     }
 

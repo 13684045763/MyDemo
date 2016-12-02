@@ -26,6 +26,7 @@
 
 body {
   background-image: url(../img/bg2.jpg);
+  background-color: black;
   background-repeat: no-repeat;
   background-position: top center;
   background-attachment: fixed;
@@ -58,6 +59,23 @@ body {
   color: white;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
 }
+#wrapper .finished {
+  color: white;
+  margin-top: 10%;
+  position: fixed;
+  left: 50%;
+  text-align: center;
+  width: 100%;
+  margin-left: -50%;
+  bottom: 100px;
+}
+#wrapper .finished p {
+  font-size: 3em;
+}
+#wrapper .finished p span {
+  font-size: 1.2em;
+  color: yellow;
+}
 #wrapper #start,
 #wrapper #reset {
   width: 60%;
@@ -84,7 +102,8 @@ body {
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.1));
 }
 #wrapper #reinput,
-#wrapper #resetcircle {
+#wrapper #resetcircle,
+#wrapper #resetgroup {
   position: fixed;
   bottom: 40px;
   width: 25%;
@@ -99,7 +118,8 @@ body {
           transition: all .3s;
 }
 #wrapper #reinput:hover,
-#wrapper #resetcircle:hover {
+#wrapper #resetcircle:hover,
+#wrapper #resetgroup:hover {
   opacity: 1;
 }
 #wrapper #reinput {
@@ -111,6 +131,11 @@ body {
   right: 0;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+}
+#wrapper #resetgroup {
+  left: 50%;
+  margin-left: -12.5%;
+  border-radius: 5px;
 }
 #wrapper audio {
   position: fixed;
@@ -204,47 +229,50 @@ body {
   margin: 5px;
   border-radius: 100%;
   border: 2px solid white;
+  box-shadow: 1px 1px 3px black;
 }
-.count .addbg {
-  -webkit-animation: yuan 1s linear;
-          animation: yuan 1s linear;
+.count .addbg1 {
+  -webkit-animation: yuan1 1s linear;
+          animation: yuan1 1s linear;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
-@-webkit-keyframes yuan {
-  from {
-    background-color: transparent;
-  }
-  to {
-    background-color: white;
-  }
-}
-@keyframes yuan {
-  from {
-    background-color: transparent;
-  }
-  to {
-    background-color: white;
-  }
-}
-.count .removebg {
+.count .addbg2 {
   -webkit-animation: yuan2 1s linear;
           animation: yuan2 1s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@-webkit-keyframes yuan1 {
+  from {
+    background-color: transparent;
+  }
+  to {
+    background-color: white;
+  }
+}
+@keyframes yuan1 {
+  from {
+    background-color: transparent;
+  }
+  to {
+    background-color: white;
+  }
 }
 @-webkit-keyframes yuan2 {
   from {
-    background-color: white;
+    background-color: transparent;
   }
   to {
-    background-color: transparent;
+    background-color: #CCCCFF;
   }
 }
 @keyframes yuan2 {
   from {
-    background-color: white;
+    background-color: transparent;
   }
   to {
-    background-color: transparent;
+    background-color: #CCCCFF;
   }
 }
 
