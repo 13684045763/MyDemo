@@ -1,0 +1,144 @@
+body{
+    background:white;
+}
+
+.login{
+    margin: 50px 0;
+    //text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    //border-bottom: 3px dashed #800;
+    padding-left: 5px;
+}
+
+.login input:first-of-type{
+    font-size: 28px;
+    border:2px solid gray;
+    width:330px;
+    height:50px;
+    padding-left: 5px;
+    line-height: 50px;
+    //border:2px solid #800;
+    //border-radius: 5px;
+}
+
+.login #location{
+    width:40px;
+    height:40px;
+    vertical-align: middle;
+}
+
+.login .name{
+    //width:420px!important;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+.login .password{
+        //width:420px!important;
+}
+
+.tijiao {
+    text-align: center;
+}
+
+.tijiao button {
+    width: 300px;
+    height: 70px;
+    font-size: 30px;
+    background: #800;
+    color: white;
+    border-radius: 15px;
+    text-shadow: 1px 1px 1px black;
+    margin-top: 30px;
+    box-shadow: 0px 5px 10px gray;
+    border: 3px solid white;
+    font-weight: bold;
+}
+
+.list{
+    margin-top:0;
+    //display:none;
+}
+
+.list ul{
+    list-style: none;
+    overflow: hidden;
+    border-bottom: 2px solid #800;
+    border-top: 2px solid #800;
+    
+}
+
+.list span{
+    font-size:30px;
+}
+
+.list ul li{
+    height:100%;
+}
+
+.list li a{
+    display: block;
+    width:600px;
+    font-size: 26px;
+    padding: 10px 20px;
+    text-align: justify;
+    color:black;
+}
+
+.list li a:hover{
+    background:rgba(136,0,0,0.3);
+}
+
+.list ul li:nth-child(odd){
+    background:rgba(136,0,0,0.1);
+}
+
+
+/* WebKit browsers */
+
+::-webkit-input-placeholder {
+    font-size:24px;
+}
+
+
+/* Mozilla Firefox 4 to 18 */
+
+:-moz-placeholder {
+    font-size:24px;
+}
+
+
+/* Mozilla Firefox 19+ */
+
+::-moz-placeholder {
+    font-size:24px;
+}
+
+
+/* Internet Explorer 10+ */
+
+:-ms-input-placeholder {
+    font-size:23px;
+}
+
+.error{
+    color:red;
+    text-align: center;
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/*pass*/
+.pass{
+    margin:100px 0;
+}
+
+.pass h2{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 20px;
+}
+

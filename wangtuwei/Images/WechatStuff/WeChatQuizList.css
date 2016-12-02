@@ -1,0 +1,414 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft Yahei";
+}
+
+body {
+    //background: #f2f2f2;
+    background: white;
+}
+
+
+/*底部*/
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    width: 640px;
+    height: 85px;
+    background: white;
+    position: fixed;
+    bottom: 0px;
+    border-top: 1px solid #e2e2e2;
+}
+
+.footer span {
+    display: block;
+    width: 160px;
+    height: 85px;
+    text-align: center;
+    line-height: 130px;
+    color: #444;
+    font-size: 20px;
+}
+
+.footer li {
+    background-size: 50px;
+    float: left;
+    //display: block;
+}
+
+
+/*第一排*/
+
+.list-1 {
+    background: url(bottom-1.png) 50% 5px no-repeat;
+}
+
+.list-2 {
+    background: url(bottom-2.png) 50% 5px no-repeat;
+}
+
+.list-3 {
+    background: url(bottom-3.png) 50% 5px no-repeat;
+}
+
+.list-4 {
+    background: url(bottom-4.png) 50% 5px no-repeat;
+}
+
+
+/*包裹层*/
+
+.warp {
+    width: 640px;
+    margin: 0 auto;
+}
+
+
+/*头部#4060d1*/
+
+.header {
+    background: #4A7A55;
+    height: 95px;
+    width: 640px;
+    position: fixed;
+    top: 0;
+}
+
+.return {
+    float: left;
+    background-size: 40px;
+    width: 130px;
+    height: 95px;
+}
+
+.return img {
+    padding: 25px 35px 25px 35px;
+    width: 45px;
+    transition: background 0.5s, padding-left 0.5s, padding-right 0.5s;
+}
+
+.return img:hover {
+    background: #900;
+    padding-left: 5px;
+    padding-right: 65px;
+}
+
+
+/*头部图片*/
+
+.pic {
+    height: 320px;
+    background: url("MyCsln.jpg");
+    margin-top: 95px;
+}
+
+h1 {
+    color: white;
+    font-size: 38px;
+    line-height: 95px;
+    padding-left: 100px;
+    text-shadow: 1px 1px 5px black;
+}
+
+
+/*中间正文部分*/
+
+.content {
+    width: 100%;
+    overflow: hidden;
+    background: white;
+    //border-bottom: 25px solid #4A7A55;
+    padding-bottom: 80px;
+}
+
+a {
+    text-decoration: none;
+    //overflow:hidden
+}
+
+.content p {
+    font-size: 46px;
+    //margin-top: 20px;
+    line-height: 160px;
+    //border-left: 10px solid #4a7a55;
+    padding-left: 20px;
+    //border-bottom: 1px solid #4a7a55;
+    height: 130px;
+    color: #4a7a55;
+    background: url('test.jpg') 0 100% no-repeat;
+    background-size: 640px;
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.maincontent table {
+    margin: 30px auto;
+    //text-align: center;
+    width: 640px;
+    border-bottom: 2px solid #4a7a55;
+    border-top: 2px solid #4a7a55;
+}
+
+
+/*通过未通过样式*/
+
+.tongguo {
+    //border-left: 1px solid #4a7a55;
+    //border-top: 1px solid #4a7a55;
+    width: 100px;
+    font-size: 20px;
+    background: url("pass1-1.png") 50% 50% no-repeat;
+    background-size: 40%;
+}
+
+.notongguo {
+    // border-left: 1px solid #4a7a55;
+    //border-top: 1px solid #4a7a55;
+    width: 100px;
+    font-size: 20px;
+    background: url("pass1-2-2.png") 50% 50% no-repeat;
+    background-size: 40%;
+}
+
+
+/*表头样式*/
+
+.content th {
+    background: #4A7A55;
+    color: white;
+    font-size: 36px;
+    text-shadow: 1px 1px 1px black;
+    height: 60px;
+    border-top: 10px double white;
+    border-bottom: 10px double white;
+    //border-top-style:
+}
+
+
+/*书名连接样式*/
+
+.maincontent a {
+    display: block;
+    //height: 60px;
+    font-size: 26px;
+    line-height: 60px;
+    transition: font-size 0.5s, font-weight 0.5s;
+    padding-left: 20px;
+}
+
+
+/*单数行样式*/
+
+.dan a {
+    color: black;
+}
+
+
+/*第一行单独样式*/
+
+.dan1 a {
+    color: black;
+    //border-top: 1px solid #4a7a55;
+}
+
+
+/*双数行样式*/
+
+.shuang a {
+    background: #D0E3DC;
+    color: black;
+}
+
+.shuang {
+    background-color: #D0E3DC;
+}
+
+.maincontent a:hover {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+/*底部返回顶部按钮*/
+
+.ding a {
+    display: block;
+    width: 100px;
+    height: 60px;
+    background-color: #4A7A55;
+    margin: 0 auto;
+    position: relative;
+}
+
+.tr1 {
+    width: 0px;
+    height: 5px;
+    border-left: 35px transparent solid;
+    border-right: 35px transparent solid;
+    border-bottom: 25px white solid;
+    margin: 0 auto;
+    position: absolute;
+    left: 15px;
+    top: 20px;
+}
+
+
+/*.tr2 {
+    width: 0px;
+    height: 5px;
+    border-left: 35px transparent solid;
+    border-right: 35px transparent solid;
+    border-bottom: 25px white solid;
+    position: absolute;
+    left: 15px;
+    top: 45px;
+    transition: border 0.5s;
+}*/
+
+
+/*筛选条件*/
+
+
+/*.tiaojian span{
+    display: block;
+    font-size: 26px;
+    background:#4a7a55;
+    color:white;
+    clear: both;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+    
+}
+
+.tiaojian #zhonglei input[type="radio"]{
+    display: none;
+}
+
+.tiaojian #zhonglei label{
+    cursor: pointer;
+    background:url("check.png") left 0px no-repeat;
+    background-size: 50px;
+    padding: 2px 10px 2px 60px;
+    font-size: 36px;
+    display: block;
+    float: left;
+    margin: 12px 8px;
+    transition: all 0.1s linear;
+}
+
+.checked{
+    background:url("check.png") left -50px no-repeat!important;
+    background-size: 50px!important;
+    color:#4a7a55;
+    font-weight: bold;
+}
+
+.tiaojian input[type="submit"]{
+    display: block;
+    width:640px;
+    height:60px;
+    font-size: 24px;
+    margin-top: 20px;
+    font-weight: bold;
+}*/
+
+.xuanze {
+    display: block;
+    font-size: 30px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+/*下拉式*/
+
+.shaixuan ul {
+    margin-top: 20px;
+}
+
+.shaixuan li {
+    margin: 15px 0;
+}
+
+.shaixuan li span {
+    font-size: 40px;
+    //background:rgba(74,122,85,0.8);
+    display: block;
+    color: #4a7a55;
+    padding-left: 10px;
+    cursor: pointer;
+    width: 220px;
+    box-shadow: 1px 1px 5px #4a7a55;
+    border-radius: 5px;
+    margin-left: 20px;
+    border: 2px solid #4a7a55;
+}
+
+.hidden {
+    display: none;
+}
+
+.color {
+    background: #4a7a55!important;
+    color: white!important;
+    border: 2px solid white!important;
+}
+
+
+/*readingTest检索框样式*/
+
+.content #rt {
+    margin: 20px 0;
+}
+
+.content #rt form {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content #rt input {
+    height: 60px;
+    font-size: 1.8em;
+    border-radius: 10px;
+    padding-left: 10px;
+    border: 1px solid gray;
+    outline: none;
+}
+.content #rt input:focus{
+    border-color: #800;
+    box-shadow: 1px 1px 3px gray;
+}
+
+.content #rt button {
+    width: 140px;
+    height: 60px;
+    font-size: 30px;
+    background: #800;
+    color: white;
+    border-radius: 10px;
+    text-shadow: 1px 1px 1px black;
+    box-shadow: 0px 5px 10px gray;
+    border: 2px solid white;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.content #rt h3{
+    font-size: 1.5em;
+    margin-top: 10px;
+    opacity: 0.6;
+}
+
+.content #rt h4{
+    margin: 5px 15px;
+    text-align: justify;
+    color: red;
+    font-size: 1.8em;
+}

@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft Yahei";
+}
+
+body {
+    background: #f2f2f2;
+}
+
+
+/*包裹层*/
+
+.warp {
+    width: 640px;
+    margin: 0 auto;
+}
+
+
+/*头部#4060d1*/
+
+.header {
+    background: #4a7a55;
+    height: 95px;
+    width: 640px;
+    position: fixed;
+    top: 0;
+}
+
+.return {
+    float: left;
+    background-size: 40px;
+    width: 130px;
+    height: 95px;
+}
+
+.return img {
+    padding: 25px 35px 25px 35px;
+    width: 45px;
+    transition: background 0.5s, padding-left 0.5s, padding-right 0.5s;
+}
+
+.return img:hover {
+    background: #900;
+    padding-left: 5px;
+    padding-right: 65px;
+}
+
+
+/*头部图片*/
+
+.pic {
+    height: 320px;
+    background: url(../img/MyCsln.jpg);
+    margin-top: 95px;
+}
+
+h1 {
+    color: white;
+    font-size: 38px;
+    line-height: 95px;
+    padding-left: 100px;
+    text-shadow: 1px 1px 5px black;
+}
+
+
+/*中间正文部分*/
+
+.content {
+    width: 100%;
+    overflow:hidden;
+    background: white;
+    border-bottom: 25px solid #4a7a55;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+/*底部返回顶部按钮*/
+
+.ding a {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: #4a7a55;
+    margin: 0 auto;
+    position: relative;
+}
+
+.tr1 {
+    width: 0px;
+    height: 5px;
+    border-left: 35px transparent solid;
+    border-right: 35px transparent solid;
+    border-bottom: 25px white solid;
+    margin: 0 auto;
+    position: absolute;
+    left: 15px;
+    top: 20px;
+}
+
+.tr2 {
+    width: 0px;
+    height: 5px;
+    border-left: 35px transparent solid;
+    border-right: 35px transparent solid;
+    border-bottom: 25px white solid;
+    position: absolute;
+    left: 15px;
+    top: 45px;
+    transition: border 0.5s;
+}
+
+.tiaojian span{
+    display: inline-block;
+    float: left;
+    font-size: 40px;
+    margin: 5px;
+}
+
+.tiaojian{
+    width:100%;
+    overflow: hidden;
+}
+
+.tiaojian ul{
+    list-style: none;
+    margin-top: 20px;
+    display: inline;
+}
+.tiaojian ul li{
+    font-size: 40px;
+    float: left;
+}
+
+.tiaojian ul li a{
+    display: inline-block;
+    width:120px;
+    text-align: center;
+    margin: 5px;
+}
+
+.selected{
+    background:red;
+    color:white;
+}
+
+

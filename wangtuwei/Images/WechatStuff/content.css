@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft Yahei";
+}
+
+body {
+    background: #f2f2f2;
+}
+
+
+/*包裹层*/
+
+.warp {
+    width: 640px;
+    margin: 0 auto;
+}
+
+
+/*头部#4060d1*/
+
+.header {
+    background: #800;
+    height: 95px;
+    width: 640px;
+    position: fixed;
+    top: 0;
+}
+
+.return {
+    float: left;
+    background-size: 40px;
+    width: 130px;
+    height: 95px;
+}
+
+.return img {
+    padding: 25px 35px 25px 35px;
+    width: 45px;
+    transition: background 0.5s,padding-left 0.5s,padding-right 0.5s;
+}
+
+.return img:hover {
+    background: #900;
+    padding-left: 5px;
+    padding-right: 65px;
+}
+
+
+/*头部图片*/
+
+.pic {
+    height: 320px;
+    background: url(Images/WechatStuff/MyCsln.jpg);
+    margin-top: 95px;
+}
+
+h1 {
+    color: white;
+    font-size: 38px;
+    line-height: 95px;
+    padding-left: 100px;
+    text-shadow: 1px 1px 5px black;
+}
+
+.content {
+    width: 100%;
+    overflow: hidden;
+    background: white;
+    /*测试用*/
+    height: 800px;
+    border-bottom: 25px solid #800;
+}
+
+a {
+    text-decoration: none;
+}
