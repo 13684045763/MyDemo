@@ -140,7 +140,8 @@ body:after {
 }
 .bgcolor .choise label {
   margin-left: 1%;
-  padding: 0.5%;
+  padding: 0.6%;
+  border-radius: 1.5em;
 }
 .bgcolor .choise input {
   width: 1.5em;
