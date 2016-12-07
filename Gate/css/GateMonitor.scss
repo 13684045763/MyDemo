@@ -127,15 +127,20 @@ body {
         }
         p {
             font-size: 1.5em;
-            margin-left: 1.5em;
+            margin: 1.5em;
+        }
+        label,input{
+            cursor: pointer;
         }
         label {
             margin-left: 1%;
-            cursor: pointer;
+            padding: 0.5%;
         }
         input {
             width: 1.5em;
             height: 1.5em;
+            display: none;
+            
         }
         button {
             width: 100%;
@@ -148,16 +153,19 @@ body {
 h1,
 h2 {
     text-align: center;
+    cursor: pointer;
 }
 
 h1 {
     font-size: 4.5em;
+    color:darkblue;
+    text-shadow: 0 0 1px rgba(white,1);
 }
 
 h2 {
     font-size: 2.5em;
     font-weight: normal;
-    cursor: pointer;
+    //cursor: pointer;
     &:before {
         @include icon;
         content: "\e99b";

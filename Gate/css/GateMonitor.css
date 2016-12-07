@@ -133,15 +133,19 @@ body:after {
 }
 .bgcolor .choise p {
   font-size: 1.5em;
-  margin-left: 1.5em;
+  margin: 1.5em;
+}
+.bgcolor .choise label, .bgcolor .choise input {
+  cursor: pointer;
 }
 .bgcolor .choise label {
   margin-left: 1%;
-  cursor: pointer;
+  padding: 0.5%;
 }
 .bgcolor .choise input {
   width: 1.5em;
   height: 1.5em;
+  display: none;
 }
 .bgcolor .choise button {
   width: 100%;
@@ -152,16 +156,18 @@ body:after {
 h1,
 h2 {
   text-align: center;
+  cursor: pointer;
 }
 
 h1 {
   font-size: 4.5em;
+  color: darkblue;
+  text-shadow: 0 0 1px white;
 }
 
 h2 {
   font-size: 2.5em;
   font-weight: normal;
-  cursor: pointer;
 }
 h2:before {
   /* use !important to prevent issues with browser extensions that change fonts */
