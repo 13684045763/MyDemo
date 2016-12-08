@@ -122,20 +122,18 @@ body {
         border-top: 1px solid white;
         border-bottom: 1px solid white;
         padding-bottom: 1%;
+        overflow: hidden;
         span {
             font-size: 1.2em;
         }
-        p {
-            font-size: 1.5em;
-            margin: 1.5em;
-        }
-        label,input{
-            cursor: pointer;
-        }
         label {
-            margin-left: 1%;
-            padding: 0.6%;
+            margin: 1%;
+            padding: 0.6% 0.8%;
             border-radius: 1.5em;
+            display: block;
+            float: left;
+            cursor: pointer;
+            font-size: 1.5em;
         }
         input {
             width: 1.5em;

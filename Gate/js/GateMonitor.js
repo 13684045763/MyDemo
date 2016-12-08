@@ -6,16 +6,32 @@ $(function () {
     }, function () {
         $(this).find('.choise').stop().slideUp();
     });
-    /*input控制li显示消失事件,用each事件给每个input添加表单改变change()函数*/
-    var inputs = $('#maincontent input');
-    var labels = $('#maincontent label');
-    /*给label checked true添加样式*/
-    labels.css({
-        'background-color': 'darkblue',
-        'box-shadow': '1px 1px 3px gray',
-        'color': 'white'
+
+    var n = 0;
+    var ele = $('#maincontent li');
+    var eleLength = ele.length;
+
+    //定义定时器让动画函数每4秒运行一次
+    var t = setInterval(Do, 5000);
+    var eleli;
+
+    /*初始化input*/
+    ele.each(function (index) {
+        var value = $(this).attr('id');
+        var text1 = $(this).text();
+        var text2 = text1.substring(0, text1.indexOf('：'));
+        var labelEle = $('<label>' + text2 + '<input checked="checked" value="' + value + '" type="checkbox" /></label>');
+        labelEle.appendTo('#maincontent .choise').css({
+            'background-color': 'darkblue',
+            'box-shadow': '1px 1px 3px gray',
+            'color': 'white'
+        });
     });
 
+    var inputs = $('#maincontent input');
+    var labels = $('#maincontent label');
+
+    /*inputs的check状态改变时执行的函数*/
     inputs.change(function () {
         var ID = $(this).attr('value');
         var ele = $('#maincontent').find('[id="' + ID + '"]');
@@ -38,17 +54,11 @@ $(function () {
         }
     });
 
-    var n = 0;
-    var ele = $('#maincontent li');
-    var eleLength = ele.length;
 
-    //定义定时器让动画函数每4秒运行一次
-    var t = setInterval(Do, 5000);
-    var eleli;
 
     //动画函数
     function Do() {
-        eleli = $('#maincontent').find('.block'); //将显示的li放入eleli集合中
+        eleli = $('#maincontent').find('.block'); //将显示的li放入eleli集合中，每次执行动画函数时都会检查当前存在得li，当减少li的时候可以马上应用效果，当增加li时得等到动画循环完从0开始后才能得到应用效果
 
         if (n < eleli.length) {
             eleli.eq(n).stop().delay(1000).animate({
