@@ -1,0 +1,727 @@
+#intro {
+  font-size: 42px;
+  -webkit-transition: font-size 0.2s linear;
+}
+
+@media only screen and (max-width: 1700px) {
+  #intro {
+    font-size: 42px;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  #intro {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  #intro {
+    font-size: 38px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  #intro {
+    font-size: 36px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  #intro {
+    font-size: 34px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  #intro {
+    font-size: 32px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  #intro {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #intro {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #intro {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #intro {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #intro {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #intro {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #intro {
+    font-size: 8px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #intro {
+    font-size: 4px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  #intro {
+    font-size: 1px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Microsoft Yahei";
+}
+
+body {
+  background: #acf0f2;
+  //background:url("../img/bg01.png");
+  background-size: 100%;
+}
+
+.warp {
+  width: 100%;
+}
+
+.header {
+  //border-bottom: 1px solid #225378;
+  overflow: hidden;
+  //background: white;
+}
+
+.header .logo {
+  background: url("../img/Logo.png") 0 0 no-repeat;
+  background-size: 70%;
+  width: 20%;
+  padding-bottom: 4%;
+  margin-top: 1%;
+  margin-left: 1%;
+  float: left;
+}
+
+.header .font {
+  border-bottom: 3px solid #225378;
+  float: right;
+  line-height: 120%;
+  width: 75%;
+  text-align: right;
+  font-size: 0.6em;
+  margin-right: 1%;
+  margin-top: 1%;
+}
+
+.footer {
+  width: 100%;
+  height: 5%;
+  position: fixed;
+  bottom: 0%;
+  //border-top:1px dashed #225378;
+  background: white;
+  box-shadow: 0 -1px 10px #d0d0d0;
+}
+
+.footer .left {
+  position: absolute;
+  bottom: 10%;
+  left: 1%;
+  font-size: 0.6em;
+}
+
+.footer .left span {
+  font-weight: bold;
+  color: red;
+}
+
+.footer .right {
+  position: absolute;
+  bottom: 20%;
+  right: 1%;
+  font-size: 0.4em;
+}
+
+.fanhui img {
+  width: 50%;
+  padding: 25% 0 20% 0;
+}
+
+.fanhui a {
+  //display: block;
+  width: 13%;
+  background: #225378;
+  border-radius: 100%;
+  //line-height: 310%;
+  color: white;
+  border: 5px solid white;
+  box-shadow: 1px 1px 15px black;
+  position: fixed;
+  top: 40%;
+  left: 1%;
+  text-align: center;
+}
+
+.fanhui a:hover {
+  background: #1695a3;
+}
+
+.queding img {
+  width: 50%;
+  padding: 25% 0 20% 0;
+}
+.queding a {
+  //display: block;
+  width: 13%;
+  background: #225378;
+  border-radius: 100%;
+  //line-height: 310%;
+  color: white;
+  border: 5px solid white;
+  box-shadow: 1px 1px 15px black;
+  position: fixed;
+  top: 40%;
+  right: 1%;
+  text-align: center;
+}
+
+.queding a:hover {
+  background: #1695a3;
+}
+
+.top img {
+  width: 50%;
+  padding: 25% 0 20% 0;
+}
+
+.top a {
+  //display: block;
+  width: 13%;
+  background: #225378;
+  border-radius: 100%;
+  //line-height: 310%;
+  color: white;
+  border: 5px solid white;
+  box-shadow: 1px 1px 15px black;
+  position: fixed;
+  top: 40%;
+  right: 1%;
+  text-align: center;
+}
+
+.top a:hover {
+  background: #1695a3;
+}
+
+
+/*--------------------------我要借书动画---------------------*/
+
+.ani01 {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+.banzi {}
+
+.books {
+  position: absolute;
+  width: 60%;
+  left: 0;
+  top: -6%;
+  opacity: 0;
+  animation: books 5s infinite linear;
+}
+
+.card {
+  position: absolute;
+  right: -9%;
+  width: 60%;
+  opacity: 0;
+  top: -4%;
+  animation: card 5s infinite linear;
+}
+
+@keyframes books {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+    top: -6%;
+  }
+  90% {
+    top: 21%;
+    opacity: 1;
+  }
+  95% {
+    top: 21%;
+    opacity: 1;
+  }
+  100% {
+    top: 21%;
+    opacity: 0;
+  }
+}
+
+@keyframes card {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+    top: -4%;
+  }
+  90% {
+    opacity: 1;
+    top: 29%;
+  }
+  95% {
+    opacity: 1;
+    top: 29%;
+  }
+  100% {
+    opacity: 0;
+    top: 29%
+  }
+}
+
+
+/*--------------------------我要借书动画结束---------------------*/
+
+
+/*--------------------------背景动画---------------------*/
+
+.ani2 {
+  position: fixed;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid white;
+  z-index: -999;
+  animation: ani02 20s infinite linear;
+  top: -20%;
+}
+
+@keyframes ani02 {
+  from {
+    top: 100%;
+    transform: rotate(0);
+  }
+  to {
+    top: -20%;
+    transform: rotate(360deg);
+  }
+}
+
+.a01 {
+  width: 1%;
+  height: 1%;
+  left: 20%;
+  animation-duration: 8s;
+}
+
+.a02 {
+  width: 1%;
+  height: 2%;
+  left: 10%;
+  animation-delay: 2s;
+}
+
+.a03 {
+  width: 5%;
+  height: 10%;
+  left: 30%;
+  animation-delay: 4s;
+}
+
+.a04 {
+  width: 2%;
+  height: 4%;
+  left: 40%;
+  animation-delay: 4s;
+  animation-duration: 8s;
+}
+
+.a05 {
+  width: 1%;
+  height: 2%;
+  left: 50%;
+  animation-delay: 0s;
+  animation-duration: 10s;
+}
+
+.a06 {
+  width: 2%;
+  height: 4%;
+  left: 60%;
+  animation-delay: 2s;
+  animation-duration: 10s;
+}
+
+.a07 {
+  width: 1%;
+  height: 2%;
+  left: 70%;
+  animation-delay: 4s;
+  animation-duration: 9s;
+}
+
+.a08 {
+  width: 5%;
+  height: 10%;
+  left: 50%;
+  animation-delay: 8s;
+  animation-duration: 8s;
+}
+
+.a09 {
+  width: 2%;
+  height: 4%;
+  left: 90%;
+  animation-delay: 0s;
+  animation-duration: 10s;
+}
+
+.a10 {
+  width: 2%;
+  height: 4%;
+  left: 5%;
+  animation-delay: 5s;
+  animation-duration: 9s;
+}
+
+.a11 {
+  width: 1%;
+  height: 1%;
+  left: 95%;
+  animation-delay: 10s;
+  animation-duration: 10s;
+}
+
+.a12 {
+  width: 1%;
+  height: 2%;
+  left: 85%;
+  animation-delay: 9s;
+}
+
+.a13 {
+  width: 5%;
+  height: 10%;
+  left: 75%;
+  animation-delay: 8s;
+}
+
+.a14 {
+  width: 2%;
+  height: 4%;
+  left: 65%;
+  animation-delay: 7s;
+  animation-duration: 8s;
+}
+
+.a15 {
+  width: 1%;
+  height: 2%;
+  left: 55%;
+  animation-delay: 6s;
+  animation-duration: 10s;
+}
+
+.a16 {
+  width: 2%;
+  height: 4%;
+  left: 45%;
+  animation-delay: 5s;
+  animation-duration: 7s;
+}
+
+.a17 {
+  width: 1%;
+  height: 2%;
+  left: 35%;
+  animation-delay: 8s;
+  animation-duration: 10s;
+}
+
+.a18 {
+  width: 3%;
+  height: 6%;
+  left: 25%;
+  animation-delay: 7s;
+  animation-duration: 8s;
+}
+
+.a19 {
+  width: 2%;
+  height: 4%;
+  left: 15%;
+  animation-delay: 6s;
+  animation-duration: 10s;
+}
+
+.a20 {
+  width: 2%;
+  height: 4%;
+  left: 95%;
+  animation-delay: 5s;
+  animation-duration: 9s;
+}
+
+
+/*--------------------------背景动画结束---------------------*/
+
+.center {}
+
+.mokuai {
+  width: 80%;
+  margin: 15% auto;
+  text-align: center;
+}
+
+.mokuai a {
+  text-decoration: none;
+  font-size: 1.4em;
+  color: black;
+  float: left;
+  box-shadow: 1px 0px 20px black;
+  border-radius: 100%;
+  font-weight: bold;
+  display: block;
+  width: 22%;
+  padding: 8.2% 0;
+  margin: 1%;
+  border: 4px solid white;
+}
+
+.b01 a {
+  background: #ff6138;
+}
+
+.b01,.b02,.b03,.b04{
+  opacity: 0.2;
+}
+
+.b02 a {
+  background: #ffff9d;
+}
+
+.b03 a {
+  background: #beeb9f;
+}
+
+.b04 a {
+  background: #79bd8f;
+}
+
+.mokuai a:hover {
+  background: #225378;
+  color: white;
+}
+
+
+
+/*我要借书center01--------------------*/
+
+.center01 .jieshu {
+  //writing-mode:tb-rl;
+  font-size: 1.5em;
+  width: 100%;
+  //background:#ffffcc;
+  text-align: center;
+  //border:8px solid white;
+  //box-shadow: 2px 2px 10px black;
+  //border-radius: 120px;
+  font-weight: bold;
+  color: #225378;
+  text-shadow: 1px 1px 1px gray;
+  margin: 0 auto;
+  margin-bottom: 2%;
+  margin-top: -2%;
+  border-bottom: 3px dashed #225378;
+}
+
+.center01 .zhiyin {
+  text-align: center;
+  font-size: 1em;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 1%;
+}
+
+
+/*我要借书center01--------------------结束*/
+
+
+/*操作结果--------------------*/
+
+.jieguo {
+  width: 60%;
+  margin: 0 auto;
+  height: 100%;
+  //border: 1px solid white;
+}
+
+
+/*操作结果--------------------结束*/
+
+
+/*密码--------------------------------------------------------*/
+
+.password {
+  width: 60%;
+  margin: 0 auto;
+  height: 100%;
+  text-align: center;
+  margin-top: 5%
+}
+
+.password p {
+  text-align: left;
+  padding-bottom: 6%;
+  font-size: 1em;
+  color: #225378;
+}
+
+.password input {
+  background: white;
+  border: none;
+  outline: none;
+  padding: 4% 5%;
+  font-size: 1.5em;
+  border-radius: 13px;
+  box-shadow: 1px 1px 10px gray;
+  opacity: 0.6;
+}
+
+.password input:focus {
+  opacity: 1;
+}
+
+.password button {
+  width: 40%;
+  font-size: 1.5em;
+  border: 3px solid white;
+  background: #225378;
+  color: white;
+  margin-top: 5%;
+  box-shadow: 1px 1px 10px gray;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.password button:hover {
+  background: #1695a3;
+}
+
+
+/*密码---------------------------结束-----------------------------*/
+
+
+/*图书检索---------------------------开始-----------------------------*/
+
+.search {
+  width: 60%;
+  margin: 0 auto;
+  height: 100%;
+  text-align: center;
+}
+
+.search .kuang {
+  width: 80%;
+  margin: 0 auto;
+  background: #225378;
+  padding: 1% 0;
+  box-shadow: 1px 1px 10px gray;
+}
+
+.search input {
+  border: none;
+  background: #1695a3;
+  outline: none;
+  font-size: 1.0em;
+  width: 70%;
+  color: #225378;
+}
+
+input:focus {
+  background: white;
+}
+
+
+/* WebKit browsers */
+
+::-webkit-input-placeholder {
+  color: white;
+}
+
+
+/* Mozilla Firefox 4 to 18 */
+
+:-moz-placeholder {
+  color: white;
+}
+
+
+/* Mozilla Firefox 19+ */
+
+::-moz-placeholder {
+  color: white;
+}
+
+
+/* Internet Explorer 10+ */
+
+:-ms-input-placeholder {
+  color: white;
+}
+
+.search a {
+  font-size: 1.2em;
+  text-decoration: none;
+  color: white;
+  border-left: 2px dotted white;
+  border-right: 2px dotted white;
+  margin-left: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+  font-weight: bold;
+}
+
+.search a:hover {
+  background: white;
+  color: #225378;
+}
+
+.search .content {
+  text-align: justify;
+  margin-top: 5%;
+  padding-top: 2%;
+  border-top: 3px solid #225378;
+}
+
+
+/*图书检索---------------------------结束-----------------------------*/
