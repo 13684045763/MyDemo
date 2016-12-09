@@ -71,12 +71,12 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: top center;
+    background-color: rgba(47, 134, 181, 1);
     overflow: hidden;
     &:after {
         content: "";
         background-image: url("../img/GateGraph.png");
         background-repeat: no-repeat;
-        //background-attachment: fixed;
         background-size: 100%;
         display: block;
         position: fixed;
@@ -123,8 +123,13 @@ body {
         border-bottom: 1px solid white;
         padding-bottom: 1%;
         overflow: hidden;
-        span {
-            font-size: 1.2em;
+        p {
+            font-size: 2em;
+            text-indent: 2em;
+            span {
+                font-weight: bold;
+                color: red;
+            }
         }
         label {
             margin: 1%;
@@ -136,15 +141,7 @@ body {
             font-size: 1.5em;
         }
         input {
-            width: 1.5em;
-            height: 1.5em;
             display: none;
-            
-        }
-        button {
-            width: 100%;
-            margin: 1%;
-            font-size: 3em;
         }
     }
 }
@@ -157,8 +154,8 @@ h2 {
 
 h1 {
     font-size: 4.5em;
-    color:darkblue;
-    text-shadow: 0 0 1px rgba(white,1);
+    color: darkblue;
+    text-shadow: 0 0 1px rgba(white, 1);
 }
 
 h2 {

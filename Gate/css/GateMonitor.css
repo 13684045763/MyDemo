@@ -52,6 +52,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: top center;
+  background-color: #2f86b5;
   overflow: hidden;
 }
 body:after {
@@ -129,8 +130,13 @@ body:after {
   padding-bottom: 1%;
   overflow: hidden;
 }
-.bgcolor .choise span {
-  font-size: 1.2em;
+.bgcolor .choise p {
+  font-size: 2em;
+  text-indent: 2em;
+}
+.bgcolor .choise p span {
+  font-weight: bold;
+  color: red;
 }
 .bgcolor .choise label {
   margin: 1%;
@@ -142,14 +148,7 @@ body:after {
   font-size: 1.5em;
 }
 .bgcolor .choise input {
-  width: 1.5em;
-  height: 1.5em;
   display: none;
-}
-.bgcolor .choise button {
-  width: 100%;
-  margin: 1%;
-  font-size: 3em;
 }
 
 h1,

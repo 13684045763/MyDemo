@@ -59,6 +59,7 @@ $(function () {
     //动画函数
     function Do() {
         eleli = $('#maincontent').find('.block'); //将显示的li放入eleli集合中，每次执行动画函数时都会检查当前存在得li，当减少li的时候可以马上应用效果，当增加li时得等到动画循环完从0开始后才能得到应用效果
+        $('#maincontent .choise span').text(eleli.length*5);
 
         if (n < eleli.length) {
             eleli.eq(n).stop().delay(1000).animate({
