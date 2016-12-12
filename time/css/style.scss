@@ -22,11 +22,10 @@
     }
 }
 
+@import 'cssreset';
+
 * {
-    margin: 0;
-    padding: 0;
     font-family: "Microsoft Yahei";
-    //font-size: 12px;
 }
 
 body {
@@ -50,7 +49,64 @@ body {
     h1 {
         font-size: 4em;
         color: white;
-        text-shadow: 1px 1px 5px black;
+        text-shadow: 1px 1px 5px gray;
+        position: relative;
+        cursor: pointer;
+        div {
+            position: absolute;
+            left: 50%;
+            top: 110%;
+            width: 96%;
+            //height:100%;
+            overflow: hidden;
+            margin-left: -50%;
+            background-color: rgba(white, .2);
+            z-index: 999;
+            display: none;
+            padding: 2%;
+            box-shadow: 0 0 3px white;
+            cursor: default;
+            button {
+                width: 100%;
+                padding: 1%;
+                background-color: transparent;
+                color: white;
+                //letter-spacing: 3em;
+                text-align: center;
+                cursor: pointer;
+                border-radius: 5px;
+                outline: none;
+                &:hover {
+                    background: linear-gradient(to top, rgba(white, .5), rgba(white, .1));
+                }
+                &:active {
+                    background: linear-gradient(to bottom, rgba(white, .5), rgba(white, .1));
+                }
+            }
+            p {
+                margin-top: 1%;
+                text-align: left;
+                text-shadow: 1px 1px 1px rgba(black, .8);
+                font-weight: normal;
+                font-size: 1.5em;
+                &:nth-of-type(2){
+                    border-top: 1px solid white;
+                }
+                
+                input {
+                    &::selection {
+                        background-color: orange;
+                    }
+                    padding-left: 1em;
+                    outline:none;
+                    border:none;
+                    background-color:rgba(white, .7);
+                    color:black;
+                    text-shadow: 1px 1px 1px rgba(black, .5);
+                    border-radius: 5px;
+                }
+            }
+        }
     }
     h2 {
         width: 100%;
@@ -125,9 +181,10 @@ body {
         border-bottom-left-radius: 5px;
     }
     #resetgroup {
-        left: 50%;
+        @extend #reinput;
+        /*left: 50%;
         margin-left: -12.5%;
-        border-radius: 5px;
+        border-radius: 5px;*/
     }
     audio {
         position: fixed;

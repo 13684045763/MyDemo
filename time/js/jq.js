@@ -1,9 +1,16 @@
 $(function () {
-    var recive = prompt("请输入定时器的最大时间，单位秒（请输入纯数字）："); //定时器的最大时间
+    //var recive = prompt("请输入定时器的最大时间，单位秒（请输入纯数字）："); //定时器的最大时间
+    //var maxtime = parseInt(recive);
+    //var n = parseInt(maxtime); //转换为int格式
+    //var circle = prompt("请输入周期次数（请输入纯数字）："); //获取周期数
+    //var m = parseInt(circle, 10);
+    var recive = $('#wrapper h1 input:first').val();
+    var circle = $('#wrapper h1 input:last').val();
     var maxtime = parseInt(recive);
-    var n = parseInt(maxtime); //转换为int格式
-    var circle = prompt("请输入周期次数（请输入纯数字）：");
     var m = parseInt(circle, 10);
+    var n = maxtime;
+
+
     var groupCounts = 0; //声明组数变量
     var group = $('#wrapper .finished span'); //组数所在对象
     var t; //创建对象，用来被定时器赋值
@@ -11,13 +18,36 @@ $(function () {
     var audioEle = document.getElementById('audio'); //创建wav播放对象[0]是jq必带参数，不然后面无法运行
     var time = $('#wrapper h2');
 
-    time.text(n); //页面显示定义的最大时间
+    PointAndTime();
+
+    /*h1倒计时点击出现设置面板事件*/
+    $('#wrapper h1').hover(function () {
+        $(this).children().stop().slideToggle('fast');
+    });
 
 
-    /*插入周期次数小圆点*/
-    for (i = 0; i < m; i++) {
-        $('<div class="yuan"></div>').appendTo('#wrapper .count');
+
+    /*下拉时间周期确定按钮事件*/
+    $('#wrapper h1 button').click(function () {
+        recive = $('#wrapper h1 input:first').val();
+        circle = $('#wrapper h1 input:last').val();
+        maxtime = parseInt(recive);
+        m = parseInt(circle, 10);
+        n = maxtime;
+        PointAndTime();
+    });
+
+    /*插入小圆点周期与倒计时函数*/
+    function PointAndTime() {
+        time.text(n); //页面显示定义的最大时间
+
+        /*插入周期小圆点*/
+        $('#wrapper .count').empty();
+        for (var i = 0; i < m; i++) {
+            $('<div class="yuan"></div>').appendTo('#wrapper .count');
+        }
     }
+
     /*重置按钮按下时执行*/
     $('#wrapper #reset').click(function () {
         n = maxtime;
@@ -25,17 +55,18 @@ $(function () {
         clearInterval(t);
         ani.removeClass('rotateani');
         time.removeClass('bigsmall');
-        stopPlay();
+        stopPlay(); //停止播放音乐
     });
+
     /*开始按钮按下时执行*/
     $('#wrapper #start').click(function () {
         startTime();
     });
 
     /*重载页面重新输入*/
-    $('#wrapper #reinput').click(function () {
+    /*$('#wrapper #reinput').click(function () {
         window.location.reload(); //重新刷新页面
-    });
+    });*/
 
     /*重置小圆点*/
     $('#wrapper #resetcircle').click(function () {
@@ -134,8 +165,8 @@ $(function () {
     }
     /*停止播放并回到0秒函数*/
     function stopPlay() {
-        audioEle.pause();
-        audioEle.currentTime = 0;
+        audioEle.pause(); //暂停
+        audioEle.currentTime = 0; //时间回到0
     }
 
 })
