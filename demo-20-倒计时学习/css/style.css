@@ -1,0 +1,183 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  font-family: cursive, "Microsoft Yahei";
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset,
+img {
+  border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+q:before,
+q:after {
+  content: '';
+}
+
+abbr,
+acronym {
+  border: 0;
+}
+
+body {
+  background-image: -webkit-linear-gradient(bottom, #800, rgba(136, 0, 0, 0.7));
+  background-image: linear-gradient(to top, #800, rgba(136, 0, 0, 0.7));
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+.wrapper .time,
+.wrapper .daojishi {
+  position: absolute;
+  width: 100%;
+}
+.wrapper .time {
+  text-align: center;
+  top: 30%;
+  text-align: center;
+  font-size: 5vw;
+  -webkit-transform-origin: bottom;
+      -ms-transform-origin: bottom;
+          transform-origin: bottom;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  -webkit-animation: xuanzhuang 1s infinite;
+          animation: xuanzhuang 1s infinite;
+}
+@-webkit-keyframes xuanzhuang {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0.5;
+  }
+  to {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 1;
+  }
+}
+@keyframes xuanzhuang {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0.5;
+  }
+  to {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 1;
+  }
+}
+.wrapper .daojishi {
+  top: 38%;
+  text-align: center;
+  font-size: 5vw;
+  margin-top: 2%;
+  color: yellow;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+}
+.wrapper .daojishi span {
+  display: block;
+  font-size: 6vw;
+}
+.wrapper .load {
+  height: 2vh;
+  position: absolute;
+  left: 50%;
+  margin-left: -5vh;
+  bottom: 10%;
+  border: 5vh solid transparent;
+  border-top-color: white;
+  border-bottom-color: yellow;
+  -webkit-animation: load 1s infinite;
+          animation: load 1s infinite;
+  border-radius: 2vh;
+}
+@-webkit-keyframes load {
+  from {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+            transform: rotate3d(0, 0, 1, 0deg);
+  }
+  to {
+    -webkit-transform: rotate3d(0, 0, 1, 360deg);
+            transform: rotate3d(0, 0, 1, 360deg);
+  }
+}
+@keyframes load {
+  from {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+            transform: rotate3d(0, 0, 1, 0deg);
+  }
+  to {
+    -webkit-transform: rotate3d(0, 0, 1, 360deg);
+            transform: rotate3d(0, 0, 1, 360deg);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
