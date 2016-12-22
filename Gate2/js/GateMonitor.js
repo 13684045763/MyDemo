@@ -1,9 +1,9 @@
 $(document).ready(function () {
     var mySwiper = new Swiper('.swiper-container', {
-        direction: 'vertical',
+        //direction: 'vertical',
         loop: true,
         // 分页器
-        pagination: '.swiper-pagination',
+        //pagination: '.swiper-pagination',
         paginationType: 'bullets',
         paginationClickable: true,
         keyboardControl: true,
@@ -11,8 +11,18 @@ $(document).ready(function () {
         autoplay: 4000,
         autoplayDisableOnInteraction: false,
         speed: 1000,
+        effect: 'coverflow',
+        slidesPerView: 1,
+        centeredSlides: true,
+        coverflow: {
+            rotate: 150,
+            stretch: 10,
+            depth: 60,
+            modifier: 2,
+            slideShadows: false
+        }
     });
-})
+});
 
 $(function () {
     $('#maincontent .bgcolor').hover(function () {
