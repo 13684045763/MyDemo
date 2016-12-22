@@ -1,0 +1,226 @@
+* {
+    font-family: "Microsoft Yahei";
+}
+
+@import 'cssreset';
+@import 'swiper.min.css';
+@media screen and (max-width:1349px) {
+    body {
+        font-size: 8px;
+    }
+}
+
+@media screen and (min-width:1350px) and (max-width:1589px) {
+    body {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width:1590px) and (max-width:1850px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width:1851px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('fonts2/icomoon.eot?8488ct');
+    src: url('fonts2/icomoon.eot?8488ct#iefix') format('embedded-opentype'), url('fonts2/icomoon.ttf?8488ct') format('truetype'), url('fonts2/icomoon.woff?8488ct') format('woff'), url('fonts2/icomoon.svg?8488ct#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin icon {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-books:before {
+    content: "\e920";
+}
+
+.icon-library:before {
+    content: "\e921";
+}
+
+.icon-stats-dots:before {
+    content: "\e99b";
+}
+
+.icon-stats-bars:before {
+    content: "\e99c";
+}
+
+body {
+    background-image: url("../img/GateBg.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top center;
+    background-color: rgba(47, 134, 181, 1);
+    overflow: hidden;
+
+    &:after {
+        content: "";
+        background-image: url("../img/GateGraph.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100%;
+        background-position: center;
+        display: block;
+        position: fixed;
+        z-index: -999;
+        opacity: 0.6;
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+        left: -10%;
+        animation: movebody 15s linear infinite;
+        @keyframes movebody {
+            0% {
+                left: -100%;
+            }
+            90% {
+                left: 0;
+            }
+            91% {
+                opacity: 1;
+                left: 0;
+                transform: rotate3d(1, 0, 0, 0deg);
+                transform-origin: bottom;
+            }
+            100% {
+                opacity: 0;
+                left: 0;
+                transform: rotate3d(1, 0, 0, 90deg);
+            }
+        }
+    }
+}
+
+.bgcolor {
+    background-color: rgba(white, .7);
+    box-shadow: 0 1px 4px rgba(black, .8);
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    top: 0;
+    .choise {
+        //background-color: rgba(white, .8);
+        display: none;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        padding-bottom: 1%;
+        overflow: hidden;
+        p {
+            padding-left: 1%;
+            font-size: 2em;
+            font-style: italic;
+            span {
+                font-weight: bold;
+                color: red;
+            }
+        }
+        label {
+            margin: 1%;
+            padding: 0.6% 0.8%;
+            border-radius: 1.5em;
+            display: inline-block;
+            //float: left;
+            cursor: pointer;
+            font-size: 2em;
+        }
+        input {
+            display: none;
+        }
+    }
+}
+
+h1,
+h2 {
+    text-align: center;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 4.5em;
+    color: darkblue;
+    text-shadow: 0 0 1px rgba(white, 1);
+}
+
+h2 {
+    font-size: 2.5em;
+    font-weight: normal;
+    //cursor: pointer;
+    &:before {
+        @include icon;
+        content: "\e99b";
+        padding-right: 1%;
+    }
+}
+
+#maincontent {
+    padding-top: 8%;
+    .swiper-slide {
+        width: 100%;
+        height: 1080px;
+        text-shadow: 1px 1px 3px rgba(black, .7);
+        font-size: 5em;
+        color: white;
+        text-align: center;
+        //padding-top: 1%;
+        span {
+            font-weight: bold;
+            color: #ffcc00;
+        }
+        h3{
+            padding: 1% 0;
+        }
+        p {
+            animation: bigsmall 4s infinite ease;
+            letter-spacing: 10px;
+            line-height: 1.6;
+            @keyframes bigsmall {
+                0% {
+                    transform: scale(1);
+
+                }
+                50% {
+                    transform: scale(1.1);
+
+                }
+                100% {
+                    transform: scale(1);
+
+                }
+            }
+        }
+    }
+    .swiper-pagination {
+        position: fixed;
+    }
+
+}
+
+.block {
+    display: block;
+}
+
+.none {
+    display: none;
+}
+
