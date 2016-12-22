@@ -66,6 +66,11 @@
     content: "\e99c";
 }
 
+::selection{
+    background-color:transparent;
+}
+
+
 body {
     background-image: url("../img/GateBg.png");
     background-repeat: no-repeat;
@@ -126,6 +131,8 @@ body {
         border-bottom: 1px solid white;
         padding-bottom: 1%;
         overflow: hidden;
+        
+        
         p {
             padding-left: 1%;
             font-size: 2em;
@@ -186,6 +193,8 @@ h2 {
         span {
             font-weight: bold;
             color: #ffcc00;
+            font-size: 1.1em;
+            //vertical-align: middle;
         }
         h3{
             padding: 1% 0;
@@ -193,7 +202,7 @@ h2 {
         p {
             animation: bigsmall 4s infinite ease;
             letter-spacing: 10px;
-            line-height: 1.6;
+            line-height: 1.4;
             @keyframes bigsmall {
                 0% {
                     transform: scale(1);
@@ -212,6 +221,9 @@ h2 {
     }
     .swiper-pagination {
         position: fixed;
+        transform: scale(2);
+        right: 2%;
+        
     }
 
 }

@@ -1,3 +1,19 @@
+$(document).ready(function () {
+    var mySwiper = new Swiper('.swiper-container', {
+        direction: 'vertical',
+        loop: true,
+        // 分页器
+        pagination: '.swiper-pagination',
+        paginationType: 'bullets',
+        paginationClickable: true,
+        keyboardControl: true,
+        mousewheelControl: true,
+        autoplay: 4000,
+        autoplayDisableOnInteraction: false,
+        speed: 1000,
+    });
+})
+
 $(function () {
     $('#maincontent .bgcolor').hover(function () {
         $(this).find('.choise').stop().slideDown();
@@ -48,8 +64,8 @@ $(function () {
                     'color': 'black'
                 });
             }
-        }else{
+        } else {
             return false;
         }
     });
-})
+});
