@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE-edge,chrome=1" />
+  <title>报表与统计</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/jq.js"></script>
+</head>
+
+<body>
+  <div class="background">
+    <!-- header starting -->
+    <header>
+      <div class="header01">
+        <div class="left">
+          <div class="icon"></div>
+          <h1>北京市密云县中小学图书馆（室）管理平台</h1>
+        </div>
+        <div class="right">
+          <div class="message"><a href="MessageBox.html"><span>7</span></a></div>
+          <div class="login-in">
+            <a href="#" class="name">huangdan</a><span>|</span><a href="javascript:;" class="exit">退出</a>
+          </div>
+          <div class="backtohome">
+            <a href="#">回到首页</a>
+          </div>
+        </div>
+      </div>
+      <div class="header02">
+        <div class="cslnnet">
+          <a href="http://csln.net/portal/new/index.aspx" title="中国专业图书馆网CSLNNET" target="_blank"></a>
+        </div>
+        <div class="realtimedata">
+          <ul class="data-list">
+            <li class="data"><span class="icon1">注册图书馆：</span><span>5,313</span></li>
+            <li class="data"><span class="icon2">读者总数：</span><span>5,334,570</span></li>
+            <li class="data"><span class="icon3">典藏册数：</span><span>113,450,956</span></li>
+            <li class="data"><span class="icon4">昨日借书数：</span><span>10,053</span></li>
+            <li class="data"><span class="icon5">昨日阅览室签到人数：</span><span>2,720</span></li>
+            <li class="data"><span class="icon6">昨日总访问量：</span><span>224,615</span></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- header ending -->
+
+    <div class="wrapper">
+      <!-- leftbar starting -->
+      <nav class="left">
+        <div class="leftnav">
+          <ul class="navlist">
+            <li class="navitem icon1">
+              <a href="index.html" class="iconlink">
+                <div class="subnav">
+                  <span class="headertitle">图书馆管理</span>
+                </div>
+              </a>
+
+            </li>
+            <li class="navitem icon2">
+              <a href="groupsearch.html" class="iconlink">
+                <div class="subnav">
+                  <span class="headertitle">联合目录</span>
+                </div>
+              </a>
+            </li>
+            <li class="navitem icon3">
+              <a href="unionreport.html" class="iconlink active"></a>
+              <div class="subnav">
+                <span class="headertitle">报表与统计</span>
+                <div class="subnav-list">
+                  <a href="unionreport.html" class="subnavlink">基本情况</a>
+                  <a href="unionreport.html" class="subnavlink">馆藏文献</a>
+                  <a href="unionreport.html" class="subnavlink">文献总金额</a>
+                  <a href="unionreport.html" class="subnavlink">计算机应用</a>
+                  <a href="unionreport.html" class="subnavlink">网络环境</a>
+                  <a href="unionreport.html" class="subnavlink">管理软件</a>
+                  <a href="unionreport.html" class="subnavlink">流通统计</a>
+                  <a href="unionreport.html" class="subnavlink">读者统计</a>
+                  <a href="unionreport.html" class="subnavlink">分类统计</a>
+                  <a href="unionreport.html" class="subnavlink">用途统计</a>
+                  <a href="unionreport.html" class="subnavlink">出版年代</a>
+                  <a href="unionreport.html" class="subnavlink">典藏年代</a>
+                  <a href="unionreport.html" class="subnavlink">阅读测评</a>
+                </div>
+              </div>
+            </li>
+            <li class="navitem icon4">
+              <a href="libraryeditor.html" class="iconlink"></a>
+              <div class="subnav">
+                <span class="headertitle">系统管理</span>
+                <div class="subnav-list">
+                  <a href="libraryeditor.html" class="subnavlink">特征</a>
+                  <a href="libraryeditor.html" class="subnavlink">上级单位</a>
+                  <a href="libraryeditor.html" class="subnavlink">单位管理</a>
+                  <a href="libraryeditor.html" class="subnavlink">系统用户</a>
+                  <a href="libraryeditor.html" class="subnavlink">读者类别</a>
+                </div>
+              </div>
+            </li>
+            <li class="navitem icon5">
+              <a href="syssetting.html" class="iconlink"></a>
+              <div class="subnav">
+                <span class="headertitle">系统设置</span>
+                <div class="subnav-list">
+                  <a href="syssetting.html" class="subnavlink">原色设置</a>
+                  <a href="syssetting.html" class="subnavlink">常用网站</a>
+                  <a href="syssetting.html" class="subnavlink">自由网页</a>
+                  <a href="syssetting.html" class="subnavlink">电子资源</a>
+                  <a href="syssetting.html" class="subnavlink">操作记录</a>
+                  <a href="syssetting.html" class="subnavlink">推荐阅读</a>
+                </div>
+              </div>
+            </li>
+            <li class="navitem icon6">
+              <a href="TemplateView.html" class="iconlink"></a>
+              <div class="subnav">
+                <span class="headertitle">网页管理</span>
+                <div class="subnav-list">
+                  <a href="TemplateView.html" class="subnavlink">首页选择</a>
+                  <a href="TemplateView.html" class="subnavlink">发消息</a>
+                  <a href="TemplateView.html" class="subnavlink">布告</a>
+                  <a href="TemplateView.html" class="subnavlink">常用网站</a>
+                  <a href="TemplateView.html" class="subnavlink">自由网页</a>
+                  <a href="TemplateView.html" class="subnavlink">电子资源</a>
+                  <a href="TemplateView.html" class="subnavlink">新闻</a>
+                  <a href="TemplateView.html" class="subnavlink">工作动态</a>
+                  <a href="TemplateView.html" class="subnavlink">政策文件</a>
+                  <a href="TemplateView.html" class="subnavlink">工作研究</a>
+                  <a href="TemplateView.html" class="subnavlink">文献</a>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+      <!-- leftbar ending -->
+      <div class="right">
+        <!-- section starting -->
+        <section>
+          <div class="title-menu">
+            <div class="title">
+              <h2>报表与统计</h2>&nbsp;&nbsp;|&nbsp;&nbsp;<span>基本情况</span></div>
+            <div class="menu">
+              <div class="menulist">基本情况</div>
+            </div>
+          </div>
+          <!-- container里面放正文 -->
+          <div class="container">
+            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo blanditiis laborum repellendus fuga, delectus, accusantium. Repellat nisi tempora, asperiores quisquam pariatur, blanditiis culpa modi id est. Facilis id libero, voluptates.</div>
+            <div>
+              <table width="100%" border="1">
+                <tbody>
+                  <tr>
+                    <td colspan="17">
+                      &nbsp;<span class="font5">馆藏文献</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      &nbsp;&nbsp;
+                    </td>
+                    <td colspan="4">
+                      &nbsp;图书
+                    </td>
+                    <td colspan="4">
+                      &nbsp;期刊
+                    </td>
+                    <td colspan="4">
+                      &nbsp;期刊合订
+                    </td>
+                    <td colspan="2">
+                      &nbsp;视听资料
+                    </td>
+                    <td colspan="2">
+                      &nbsp;数字化文献
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      &nbsp;图书馆
+                    </td>
+                    <td colspan="2">
+                      &nbsp;中文图书
+                    </td>
+                    <td colspan="2">
+                      &nbsp;外文图书
+                    </td>
+                    <td colspan="2">
+                      &nbsp;中文期刊
+                    </td>
+                    <td colspan="2">
+                      &nbsp;外文期刊
+                    </td>
+                    <td colspan="2">
+                      &nbsp;中文期刊
+                    </td>
+                    <td colspan="2">
+                      &nbsp;外文期刊
+                    </td>
+                    <td>
+                      &nbsp;&nbsp;
+                    </td>
+                    <td>
+                      &nbsp;&nbsp;
+                    </td>
+                    <td>
+                      &nbsp;&nbsp;
+                    </td>
+                    <td>
+                      &nbsp;&nbsp;
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      &nbsp;&nbsp;
+                    </td>
+                    <td>
+                      &nbsp;种
+                    </td>
+                    <td>
+                      &nbsp;册
+                    </td>
+                    <td>
+                      &nbsp;种
+                    </td>
+                    <td>
+                      &nbsp;册
+                    </td>
+                    <td>
+                      &nbsp;种
+                    </td>
+                    <td>
+                      &nbsp;册
+                    </td>
+                    <td>
+                      &nbsp;种
+                    </td>
+                    <td>
+                      &nbsp;册
+                    </td>
+                    <td>
+                      &nbsp;种
+                    </td>
+                    <td>
+                      &nbsp;册
+                    </td>
+                    <td>
+                      &nbsp;种
+                    </td>
+                    <td>
+                      &nbsp;册
+                    </td>
+                    <td>
+                      &nbsp;种
+                    </td>
+                    <td>
+                      &nbsp;盘
+                    </td>
+                    <td>
+                      &nbsp;图书
+                    </td>
+                    <td>
+                      &nbsp;期刊
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      &nbsp;云南省石屏县第一中学
+                    </td>
+                    <td>
+                      &nbsp;29977
+                    </td>
+                    <td>
+                      &nbsp;64018
+                    </td>
+                    <td>
+                      &nbsp;15
+                    </td>
+                    <td>
+                      &nbsp;20
+                    </td>
+                    <td>
+                      &nbsp;1
+                    </td>
+                    <td>
+                      &nbsp;2
+                    </td>
+                    <td>
+                      &nbsp;0
+                    </td>
+                    <td>
+                      &nbsp;0
+                    </td>
+                    <td>
+                      &nbsp;43
+                    </td>
+                    <td>
+                      &nbsp;104
+                    </td>
+                    <td>
+                      &nbsp;0
+                    </td>
+                    <td>
+                      &nbsp;0
+                    </td>
+                    <td>
+                      &nbsp;8
+                    </td>
+                    <td>
+                      &nbsp;15
+                    </td>
+                    <td>
+                      &nbsp;0
+                    </td>
+                    <td>
+                      &nbsp;0
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <br /></div>
+            <div>Eaque voluptatum culpa sapiente, animi nisi adipisci velit, iste modi accusamus nam tenetur, excepturi obcaecati? Unde dignissimos magnam, repellat. Libero enim at laudantium minus eos quidem deleniti qui expedita doloribus.</div>
+            <div>Inventore consequuntur ipsam, accusantium est autem voluptate natus quasi commodi cupiditate deserunt quas, magni veritatis magnam quidem facilis molestias porro explicabo beatae cum reprehenderit. Consectetur ipsam mollitia dolore, perspiciatis iure!</div>
+            <div>Maiores, ullam provident laborum natus dolores excepturi aperiam suscipit illo aspernatur architecto velit dolore placeat error vel a doloribus consectetur at! Fugit accusantium eum esse unde, quis distinctio reprehenderit et.</div>
+            <div>Sit nesciunt sapiente ea provident rem sint, iste, aut minus voluptatibus quia sed adipisci atque officiis nobis perspiciatis aspernatur quas ipsa quidem voluptatem! Voluptatibus veritatis animi, harum nemo asperiores error.</div>
+            <div>Quam nostrum ex, obcaecati. Eos nihil, maxime vitae eum nisi dolorem distinctio rerum, itaque necessitatibus adipisci dolores tenetur consequatur. Odit accusamus culpa harum, dignissimos nesciunt temporibus, officia assumenda impedit rerum.</div>
+            <div>Quod, atque, culpa. Pariatur vero possimus ex nostrum necessitatibus quod error, impedit ratione, velit at saepe tempora earum. Neque ducimus repudiandae nulla saepe asperiores eos a perferendis consequatur perspiciatis tempora.</div>
+            <div>Debitis illo nihil quas repellat ut facilis, voluptatibus asperiores! Fugit, reprehenderit obcaecati doloremque deleniti quos rem. Error voluptatem fugit recusandae, dolorum quasi, cum, facere reiciendis animi, culpa laboriosam nobis architecto.</div>
+            <div>Nisi odit deleniti id tenetur corporis, iusto praesentium officiis beatae nulla sed quidem repudiandae, maiores adipisci delectus eum, reiciendis facilis inventore laborum quo nihil veritatis sint qui mollitia molestias. Nisi.</div>
+            <div>Repudiandae quisquam perspiciatis voluptas earum. Reprehenderit incidunt ipsa cum suscipit esse magni, culpa consequatur repellat possimus, amet maxime tenetur distinctio ea, quod totam minus aliquam. Placeat sit, quia molestias hic.</div>
+            <div>Ipsam nisi nemo reiciendis praesentium sequi quia, tempora, neque accusantium magni ullam, labore animi, obcaecati quaerat hic in ab. Facilis, perferendis officia culpa libero quas obcaecati eaque aperiam nemo voluptate.</div>
+            <div>Molestias doloremque esse vel. Ducimus repellendus nulla, itaque animi esse obcaecati molestias ad eligendi magni optio laboriosam. Amet soluta itaque eius, sunt, exercitationem ad aperiam, deserunt est tempora quod quaerat.</div>
+            <div>Debitis sequi itaque praesentium voluptate velit repellat architecto accusantium deleniti a cum minima natus deserunt vero, facere, sed reiciendis quis ut temporibus possimus libero, in. Fuga voluptates tempore, dignissimos aperiam!</div>
+            <div>Magni totam et quas libero ullam! Eos, aspernatur obcaecati fugiat minus? Deserunt aspernatur ipsam iusto amet. Suscipit, molestias. Vel quis porro eum placeat ipsa suscipit non ipsum aliquid maiores commodi.</div>
+            <div>Quasi repudiandae consequuntur aperiam perferendis, perspiciatis sed at ullam atque voluptatibus ea, veniam delectus asperiores obcaecati autem voluptates porro, dignissimos hic a aut id numquam officia animi distinctio! Libero, minus.</div>
+            <div>Voluptates veritatis hic ut maxime fugiat reiciendis mollitia similique at, omnis perspiciatis. Numquam doloribus harum accusamus id laudantium facere et, accusantium odio quia qui blanditiis tenetur veritatis provident vero minus.</div>
+            <div>Pariatur velit debitis eveniet laudantium voluptas, harum praesentium saepe? Cupiditate, iusto, dignissimos. Possimus aut eum quae consequatur ab quis laboriosam officiis cupiditate optio soluta delectus molestiae architecto consectetur, officia veniam?</div>
+            <div>Minima ex accusantium, saepe vitae inventore mollitia deserunt porro sed ab quia maxime sint nemo explicabo recusandae ad laboriosam doloribus nulla, commodi quidem reiciendis aut nam? Ad, inventore! Quas, voluptate?</div>
+            <div>Maxime quo deleniti iure vel amet laudantium quod, sit suscipit cum voluptates illum temporibus fuga numquam quis consequatur dignissimos saepe debitis nobis maiores beatae sunt velit sapiente. Fuga, assumenda optio.</div>
+          </div>
+        </section>
+        <!-- section ending -->
+        <!-- footer starting -->
+        <footer>
+          <div class="footerlink">
+            <ul>
+              <li><a href="#">读者信息</a></li>
+              <li><a href="#">CSLN.NET</a></li>
+              <li><a href="#">服务条款</a></li>
+              <li><a href="#">批评或建议</a></li>
+              <li><a href="#">客户服务与技术支持</a></li>
+              <li><a href="#">留言板</a></li>
+              <li><a href="#">系统信息</a></li>
+              <li><a href="#">扫描登录</a></li>
+            </ul>
+          </div>
+          <div class="copyright">Copyright &copy; 2004 csln.net All rights reserved. 京ICP证040242号 京ICP备11032106号-1 </div>
+        </footer>
+        <!-- footer ending -->
+      </div>
+    </div>
+  </div>
+</body>
+</html>
