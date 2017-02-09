@@ -5,11 +5,6 @@
   text-overflow: ellipsis;
 }
 
-*{
-  margin:0;
-  padding:0;
-}
-
 body {
   background-color: #eaeaea;
   position: relative;
@@ -271,10 +266,7 @@ header {
 
 /* leftnav */
 nav {
-  position: fixed;
-  height: 100%;
   background-color: #02335b;
-  padding-top: 0;
 }
 nav:before {
   content: "";
@@ -361,7 +353,7 @@ nav .subnav {
   display: none;
   background-color: #537fa3;
   color: white;
-  padding: 10px;
+  padding: 10px 0;
 }
 nav .subnav .headertitle {
   font-family: "Microsoft Yahei";
@@ -369,6 +361,7 @@ nav .subnav .headertitle {
   font-size: 16px;
   display: block;
   padding: 10px;
+  padding-left: 20px;
 }
 nav .subnav .subnav-list {
   display: -webkit-box;
@@ -379,20 +372,30 @@ nav .subnav .subnav-list {
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
 }
+nav .subnav .linking {
+  color: #95d800 !important;
+}
 nav .subnav .subnavlink {
   display: block;
   color: white;
   font-size: 12px;
   padding: 10px;
+  padding-left: 20px;
   box-sizing: border-box;
 }
 nav .subnav .subnavlink:hover {
   border-left: 3px solid #95d800;
-  padding-left: 7px;
+  padding-left: 17px;
   background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* wrapper */
+.wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
 .wrapper .right {
   width: 100%;
   overflow: hidden;
@@ -403,7 +406,6 @@ nav .subnav .subnavlink:hover {
   -webkit-flex-flow: column;
       -ms-flex-flow: column;
           flex-flow: column;
-  padding-left: 64px;
   box-sizing: border-box;
 }
 
@@ -532,6 +534,9 @@ section {
   display: none;
   top: 30px;
 }
+.title-menu .menu .subnav-list .linking {
+  color: red !important;
+}
 .title-menu .menu .subnav-list .subnavlink {
   padding: 5px 0;
   padding-left: 15px;
@@ -539,7 +544,7 @@ section {
   display: block;
 }
 .title-menu .menu .subnav-list .subnavlink:hover {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 .title-menu .menu .subnav-list .subnavlink:before {
   content: "|";

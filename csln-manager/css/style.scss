@@ -235,10 +235,10 @@ header {
 /* leftnav */
 
 nav {
-  position: fixed;
-  height: 100%;
+  //position: fixed;
+  //height: 100%;
   background-color: #02335b;
-  padding-top: 22px;
+  //padding-top: 22px;
   &:before {
     content: "";
     display: block;
@@ -296,17 +296,21 @@ nav {
     display: none;
     background-color: #537fa3;
     color: white;
-    padding: 10px;
+    padding: 10px 0;
     .headertitle {
       font-family: "Microsoft Yahei";
       font-weight: bold;
       font-size: 16px;
       display: block;
       padding: 10px;
+      padding-left: 20px;
     }
     .subnav-list {
       display: flex;
       flex-flow: column wrap; //row
+    }
+    .linking {
+      color: $color2!important;
     }
     .subnavlink {
       display: block;
@@ -314,10 +318,11 @@ nav {
       font-size: 12px;
       //width: 100%;
       padding: 10px;
+      padding-left: 20px;
       box-sizing: border-box;
       &:hover {
         border-left: 3px solid $color2; //bottom
-        padding-left: 7px; //bottom
+        padding-left: 17px; //bottom
         background-color: rgba(white, .2);
       }
     }
@@ -328,13 +333,14 @@ nav {
 /* wrapper */
 
 .wrapper {
+  display: flex; //none
   .left {}
   .right {
     width: 100%;
     overflow: hidden;
     display: flex;
     flex-flow: column;
-    padding-left: 64px;
+    //padding-left: 64px;
     //margin-top: 5px;
     box-sizing: border-box;
   }
@@ -456,6 +462,9 @@ section {
       padding: 10px 0;
       display: none;
       top: 30px;
+      .linking {
+        color: red !important;
+      }
       .subnavlink {
         padding: 5px 0;
         padding-left: 15px;
@@ -463,7 +472,7 @@ section {
         display: block;
         @extend %oneline;
         &:hover {
-          background-color: rgba(white, .5);
+          background-color: rgba(white, .8);
         }
         &:before {
           content: "|";
