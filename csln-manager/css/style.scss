@@ -292,7 +292,7 @@ nav {
     position: absolute;
     left: 64px;
     top: 0;
-    width: 124px * 4;
+    width: 124px; // *4
     display: none;
     background-color: #537fa3;
     color: white;
@@ -306,7 +306,7 @@ nav {
     }
     .subnav-list {
       display: flex;
-      flex-flow: row wrap;
+      flex-flow: column wrap; //row
     }
     .subnavlink {
       display: block;
@@ -316,8 +316,8 @@ nav {
       padding: 10px;
       box-sizing: border-box;
       &:hover {
-        border-bottom: 3px solid $color2;
-        padding-bottom: 7px;
+        border-left: 3px solid $color2; //bottom
+        padding-left: 7px; //bottom
         background-color: rgba(white, .2);
       }
     }
