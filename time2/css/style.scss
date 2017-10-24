@@ -1,0 +1,299 @@
+//@media screen and (max-width:322px) {
+//  * {
+//    font-size: 7px;
+//  }
+//}
+//
+//@media screen and (min-width:323px) and (max-width:803px) {
+//  * {
+//    font-size: 8px;
+//  }
+//}
+//
+//@media screen and (min-width:804px) and (max-width:1100px) {
+//  * {
+//    font-size: 12px;
+//  }
+//}
+//
+//@media screen and (min-width:1101px) {
+//  * {
+//    font-size: 15px;
+//  }
+//}
+@import 'cssreset';
+
+* {
+  font-family: "Microsoft Yahei";
+}
+
+body {
+  background: url(../img/bg2.jpg) center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+::selection {
+  background-color: transparent;
+}
+
+#wrapper {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  h1 {
+    font-size: 2em;
+    color: white;
+    text-shadow: 1px 1px 5px gray;
+    position: relative;
+    cursor: pointer;
+    div {
+      position: fixed;
+      left: 50%;
+      top: 1%;
+      cursor: default;
+      z-index: 9999;
+      width: 90%; //height:100%;
+      overflow: hidden;
+      margin-left: -45%;
+      background-color: rgba(black, .8);
+      display: none;
+      padding: 5% 1%;
+      box-sizing: border-box;
+      box-shadow: 0 0 3px white;
+      font-size: .5em;
+      border: 1px solid white;
+      border-radius: .25em;
+      button {
+        width: 50%;
+        padding: 5% 0; //        margin-left: 25%;
+        background-image: linear-gradient(#61dd45, #3cb521 50%, #36a41e);
+        color: white; //letter-spacing: 3em;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 5px;
+        outline: none;
+        &:hover {
+          background-image: linear-gradient(#52da34, #36a41e 50%, #31921b);
+        }
+        &:active {
+          background-image: linear-gradient(#52da34, #36a41e 50%, #31921b);
+        }
+      }
+      p {
+        margin-top: 1%;
+        text-align: left;
+        text-shadow: 1px 1px 1px rgba(black, .8);
+        font-weight: normal; //        font-size: 1.5em;
+        &:nth-of-type(2) {
+          border-top: 1px solid white;
+          margin-top: 10%;
+        }
+        &:nth-of-type(3) {
+          text-align: center;
+          margin-top: 10%;
+        }
+
+        input {
+          //          width:50%;
+          margin-left: 25%;
+          &::selection {
+            background-color: orange;
+          }
+          padding-left: 1em;
+          outline:none;
+          border:none;
+          background-color:rgba(white, .7);
+          color:black;
+          text-shadow: 1px 1px 1px rgba(black, .5);
+          border-radius: 5px;
+          width:20%;
+        }
+      }
+    }
+  }
+  h2 {
+    font-size: 6em;
+    margin-top: -5%;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(black, .8);
+  }
+  .finished {
+    color: white;
+    position: fixed;
+    left: 50%;
+    text-align: center;
+    width: 50%;
+    margin-left: -25%;
+    bottom: 12%;
+    z-index: -1;
+    p {
+      font-size: 1.2em;
+      span {
+        font-size: 1.2em;
+        color: yellow;
+      }
+    }
+  }
+  #start,
+  #reset {
+    position: fixed;
+    bottom: 25%;
+    z-index: 999;
+    width: 40%;
+    height: 60px;
+    font-size: 1em;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(black, .6);
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    transition: all .3s;
+    background-image: linear-gradient(#6d94bf, #446e9b 50%, #3e648d);
+    &:hover {
+      background-image: linear-gradient(#5f8ab9, #3e648d 50%, #385a7f);
+    }
+    &:active {
+      background-image: linear-gradient(#5f8ab9, #3e648d 50%, #385a7f);
+    }
+  }
+
+  #start {
+    left: 0;
+  }
+  #reset {
+    right: 0;
+  }
+
+  #reinput,
+  #resetcircle,
+  #resetgroup {
+    position: fixed;
+    bottom: 12%;
+    width: 15%;
+    height: 10%;
+    font-size: 1em;
+    cursor: pointer;
+    outline: none;
+    opacity: .5;
+    background-image: linear-gradient(#7bbdf7, #3399f3 50%, #208ff2);
+    color: white;
+    transition: all .3s;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  #reinput {
+    left: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  #resetcircle {
+    right: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-right: none;
+  }
+  #resetgroup {
+    @extend #reinput;
+    border-left: none;
+    /*left: 50%;
+        margin-left: -12.5%;
+        border-radius: 5px;*/
+  }
+  audio {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  $des:110px;
+  .ani {
+    width: $des;
+    height: $des;
+    margin: 0 auto;
+    border-radius: 100%;
+    position: relative;
+    border: 5px solid lightblue;
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -($des * 0.5);
+      margin-left: -($des * 0.5);
+      border-radius: 100%;
+      border: ($des * 0.5) solid transparent;
+      border-top-color: orange;
+      opacity: .8;
+    }
+  }
+}
+
+.rotateani {
+  animation: xuanzhuan 1s linear infinite;
+  @keyframes xuanzhuan {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+.bigsmall {
+  animation: bigsmall 1s infinite ease-out; //transform-origin: bottom;
+  @keyframes bigsmall {
+    from {
+      transform: scale(1);
+      opacity: 1;
+    }
+    to {
+      transform: scale(1.3);
+      opacity: 0.5;
+    }
+  }
+}
+
+.count {
+  background-color: transparent;
+  border: none;
+  margin-top: 10px;
+  .yuan {
+    position: inherit;
+    $des: 20px;
+    width: $des;
+    height: $des;
+    float: left;
+    margin: 5px;
+    border-radius: 100%;
+    border: 2px solid white;
+    box-shadow: 1px 1px 3px black;
+  }
+  .addbg1 {
+    animation: yuan1 1s linear;
+    animation-fill-mode: forwards;
+  }
+  .addbg2 {
+    animation: yuan2 1s linear;
+    animation-fill-mode: forwards;
+  }
+  @keyframes yuan1 {
+    from {
+      background-color: transparent;
+    }
+    to {
+      background-color: white;
+    }
+  }
+  @keyframes yuan2 {
+    from {
+      background-color: transparent;
+    }
+    to {
+      background-color: #CCCCFF;
+    }
+  }
+}

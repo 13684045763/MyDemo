@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+  <title>我的运动倒计时</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+  <script src="js/jquery.color.js"></script>
+  <script src="js/jq.js"></script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <h1>倒计时
+      <div class="label">
+        <p>请输入最大时间（请输入纯数字）：<input value="63" type="text" />（单位：秒）</p>
+        <p>请输入周期次数（请输入纯数字）：<input value="3" type="text" /></p>
+        <p><button>确　　　定</button></p>
+      </div>
+    </h1>
+    <div class="ani"></div>
+    <button class="count">
+
+	</button>
+    <h2></h2>
+    <button id="start">开始(点击按钮or按空格键)</button>
+    <button id="reset">重置倒计时</button>
+    <audio id="audio" src="wav/Alarm05.wav" controls="controls">当前浏览器不支持，请更换高版本浏览器</audio>
+    <!--<button id="reinput">重新输入</button>-->
+    <button id="resetcircle">重置周期</button>
+    <button id="resetgroup">重置组数</button>
+    <div class="finished">
+      <p>已完成 <span>0</span> 组</p>
+    </div>
+  </div>
+
+</body>
+
+</html>
